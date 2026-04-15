@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
@@ -199,12 +199,7 @@
       }
       .guide-divider {
         height: 1px;
-        background: linear-gradient(
-          90deg,
-          #0a3d2e22,
-          #c8102e22,
-          #ffcd0022
-        );
+        background: linear-gradient(90deg, #0a3d2e22, #c8102e22, #ffcd0022);
         margin: 14px 0;
       }
       .guide-tip {
@@ -235,14 +230,18 @@
       }
       .quality-card,
       .career-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease !important;
       }
       .quality-card:hover {
         transform: translateY(-8px) !important;
         box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15) !important;
       }
       .mineral-table tbody tr {
-        transition: background 0.25s ease, transform 0.2s ease;
+        transition:
+          background 0.25s ease,
+          transform 0.2s ease;
         cursor: default;
       }
       .mineral-table tbody tr:hover {
@@ -368,9 +367,12 @@
         background: linear-gradient(145deg, #2e8b57, #1f6f4a) !important;
         color: #ffffff;
         cursor: pointer;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45),
+        box-shadow:
+          0 6px 16px rgba(0, 0, 0, 0.45),
           inset 0 1px 0 rgba(255, 255, 255, 0.15);
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
       }
       .menu {
         list-style: none;
@@ -386,12 +388,14 @@
       }
       #menu-toggle:checked + .menu-icon {
         transform: translateY(0) scale(0.96);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5),
+        box-shadow:
+          0 4px 10px rgba(0, 0, 0, 0.5),
           inset 0 3px 6px rgba(0, 0, 0, 0.4);
       }
       .menu-icon:hover {
         transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55),
+        box-shadow:
+          0 10px 22px rgba(0, 0, 0, 0.55),
           inset 0 1px 0 rgba(255, 255, 255, 0.2);
       }
       .menu-scroll a {
@@ -409,7 +413,10 @@
         color: #ffffff;
         font-weight: 600;
         text-decoration: none;
-        transition: transform 0.25s ease, background 0.25s, color 0.25s;
+        transition:
+          transform 0.25s ease,
+          background 0.25s,
+          color 0.25s;
       }
       .menu a:hover {
         background-color: rgba(255, 205, 0, 0.18);
@@ -513,7 +520,7 @@
         font-size: 13px;
         font-weight: 700;
         color: #ffcd00;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         border-bottom: 1px solid rgba(255, 205, 0, 0.25);
         padding-bottom: 6px;
         margin-bottom: 8px;
@@ -526,7 +533,7 @@
         display: block;
         font-size: 11px;
         color: rgba(255, 255, 255, 0.6);
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         margin-bottom: 1px;
       }
       .vc-val {
@@ -534,7 +541,7 @@
         font-size: 14px;
         font-weight: 700;
         color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
       }
       .vc-loading {
         opacity: 0.4;
@@ -578,14 +585,16 @@
     </button>
     <div
       id="guide-overlay"
-      onclick="if(event.target===this)this.classList.remove('open')"
+      onclick="if (event.target === this) this.classList.remove('open');"
     >
       <div id="guide-modal">
         <div class="gm-header">
           <h3>📖 Hướng dẫn sử dụng</h3>
           <button
             id="guide-close"
-            onclick="document.getElementById('guide-overlay').classList.remove('open')"
+            onclick="
+              document.getElementById('guide-overlay').classList.remove('open')
+            "
           >
             ✕
           </button>
@@ -613,7 +622,7 @@
             trái.
           </p>
           <hr
-            style="border: none; border-top: 2px solid #eee; margin: 14px 0;"
+            style="border: none; border-top: 2px solid #eee; margin: 14px 0"
           />
           <p><strong>📚 Nội dung các mục</strong></p>
           <p>
@@ -621,12 +630,12 @@
             diện tích, đường biên giới và hình dạng chữ S của lãnh thổ.
           </p>
           <p>
-            🗺️ <strong>Địa lý:</strong> Thông tin về tọa độ, các vùng tiếp
-            giáp và đặc điểm tổng quan lãnh thổ Việt Nam.
+            🗺️ <strong>Địa lý:</strong> Thông tin về tọa độ, các vùng tiếp giáp
+            và đặc điểm tổng quan lãnh thổ Việt Nam.
           </p>
           <p>
-            ⛰️ <strong>Địa hình:</strong> Mô tả các dạng địa hình chính gồm
-            đồng bằng, trung du, miền núi và cao nguyên.
+            ⛰️ <strong>Địa hình:</strong> Mô tả các dạng địa hình chính gồm đồng
+            bằng, trung du, miền núi và cao nguyên.
           </p>
           <p>
             💎 <strong>Khoáng sản:</strong> Bảng thống kê các loại khoáng sản
@@ -637,8 +646,8 @@
             gió mùa, sự phân hóa theo vùng miền.
           </p>
           <p>
-            🌊 <strong>Thủy văn:</strong> Hệ thống sông ngòi, ao hồ và mạng
-            lưới thủy văn trên lãnh thổ.
+            🌊 <strong>Thủy văn:</strong> Hệ thống sông ngòi, ao hồ và mạng lưới
+            thủy văn trên lãnh thổ.
           </p>
           <p>
             💧 <strong>Vai trò khí hậu & tài nguyên nước:</strong> Tầm quan
@@ -670,7 +679,9 @@
         <div class="logo-section">
           <a href="https://giabao123123.github.io/hoctap/">
             <span class="logo-icon">
-              <i class="fa-solid fa-star footer-logo-icon star-sharp"></i> </span
+              <i
+                class="fa-solid fa-star footer-logo-icon star-sharp"
+              ></i> </span
           ></a>
           <h1 class="logo-text">VIỆT NAM MUÔN MÀU</h1>
         </div>
@@ -682,7 +693,9 @@
             <li><a href="#DIALY" class="nav-link">Địa lý</a></li>
             <li><a href="#DIAHINH" class="nav-link">Địa hình</a></li>
             <li><a href="#KHOANGSAN" class="nav-link">Khoáng sản</a></li>
-            <li><a href="#TINHCHATAM" class="nav-link">Tính chất khí hậu</a></li>
+            <li>
+              <a href="#TINHCHATAM" class="nav-link">Tính chất khí hậu</a>
+            </li>
             <li><a href="#THUYVAN" class="nav-link">Thủy văn</a></li>
             <li>
               <a href="#KHIHAU" class="nav-link"
@@ -698,17 +711,17 @@
         <nav class="main-nav w3-hide-small w3-hide-medium">
           <ul class="nav-list">
             <li class="nav-item bi">
-              <a href="#about" class="nav-link" style="text-decoration: none;"
+              <a href="#about" class="nav-link" style="text-decoration: none"
                 >Sơ lược về Việt Nam</a
               >
             </li>
             <li class="nav-item bi">
-              <a href="#DIALY" class="nav-link" style="text-decoration: none;"
+              <a href="#DIALY" class="nav-link" style="text-decoration: none"
                 >Địa lý</a
               >
             </li>
             <li class="nav-item bi">
-              <a href="#DIAHINH" class="nav-link" style="text-decoration: none;"
+              <a href="#DIAHINH" class="nav-link" style="text-decoration: none"
                 >Địa hình</a
               >
             </li>
@@ -716,7 +729,7 @@
               <a
                 href="#KHOANGSAN"
                 class="nav-link"
-                style="text-decoration: none;"
+                style="text-decoration: none"
                 >Khoáng sản</a
               >
             </li>
@@ -724,27 +737,27 @@
               <a
                 href="#TINHCHATAM"
                 class="nav-link"
-                style="text-decoration: none;"
+                style="text-decoration: none"
                 >Tính chất khí hậu</a
               >
             </li>
             <li class="nav-item bi">
-              <a href="#THUYVAN" class="nav-link" style="text-decoration: none;"
+              <a href="#THUYVAN" class="nav-link" style="text-decoration: none"
                 >Thủy văn</a
               >
             </li>
             <li class="nav-item bi">
-              <a href="#KHIHAU" class="nav-link" style="text-decoration: none;"
+              <a href="#KHIHAU" class="nav-link" style="text-decoration: none"
                 >Vai trò của khí hậu và tài nguyên nước</a
               >
             </li>
             <li class="nav-item bi">
-              <a href="#BIENDAO" class="nav-link" style="text-decoration: none;"
+              <a href="#BIENDAO" class="nav-link" style="text-decoration: none"
                 >Vùng biển đảo</a
               >
             </li>
             <li class="nav-item bi">
-              <a href="#HINHANH" class="nav-link" style="text-decoration: none;"
+              <a href="#HINHANH" class="nav-link" style="text-decoration: none"
                 >Hình ảnh quân đội Viêt Nam</a
               >
             </li>
@@ -760,7 +773,11 @@
             Từ truyền thống đến hiện đại, Việt Nam tỏa sáng bằng bản sắc, lòng
             yêu nước và khát vọng vươn lên.
           </p>
-          <div class="hero-divider" data-aos="zoom-in" data-aos-delay="400"></div>
+          <div
+            class="hero-divider"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          ></div>
           <p class="hero-quote" data-aos="fade-up" data-aos-delay="500">
             Dù khác biệt sắc màu, chúng ta chung một niềm tin, một cội nguồn và
             một tương lai Việt&nbsp;Nam.
@@ -768,7 +785,7 @@
           <a
             href="#about"
             class="hero-cta-button bi"
-            style="text-decoration: none;"
+            style="text-decoration: none"
             data-aos="fade-up"
             data-aos-delay="600"
             >Tìm Hiểu Thêm</a
@@ -805,23 +822,26 @@
               </p>
 
               <p>
-                <mark><strong>Vị trí địa lý và phạm vi lãnh thổ Việt Nam</strong></mark
+                <mark
+                  ><strong
+                    >Vị trí địa lý và phạm vi lãnh thổ Việt Nam</strong
+                  ></mark
                 ><br />
                 Việt Nam là một quốc gia nằm ở rìa phía đông bán đảo Đông Dương,
-                gần trung tâm khu vực Đông Nam Á. Tổng diện tích đất liền của Việt
-                Nam là <u>331.212 km²</u>. Biên giới Việt Nam trên đất liền dài
-                <u>4.639 km</u>, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc
-                Bộ và Biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và
-                Campuchia ở phía tây. Hình dáng Việt Nam trên bản đồ có dạng hình
-                chữ S, khoảng cách từ bắc tới nam (theo đường chim bay) là
+                gần trung tâm khu vực Đông Nam Á. Tổng diện tích đất liền của
+                Việt Nam là <u>331.212 km²</u>. Biên giới Việt Nam trên đất liền
+                dài <u>4.639 km</u>, giáp với vịnh Thái Lan ở phía tây nam, vịnh
+                Bắc Bộ và Biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và
+                Campuchia ở phía tây. Hình dáng Việt Nam trên bản đồ có dạng
+                hình chữ S, khoảng cách từ bắc tới nam (theo đường chim bay) là
                 <u>1.650 km</u> và vị trí hẹp nhất theo chiều đông – tây nằm ở
-                Đồng Hới (Quảng Trị) với chưa đầy <u>50 km</u>. Đường bờ biển dài
-                <u>3.260 km</u> (không kể các đảo). Ngoài vùng nội thủy, Việt Nam
-                tuyên bố <u>12 hải lý</u> lãnh hải, thêm <u>12 hải lý</u> vùng
-                tiếp giáp lãnh hải, <u>200 hải lý</u> vùng đặc quyền kinh tế và
-                thềm lục địa. Vùng biển thuộc chủ quyền, quyền chủ quyền và quyền
-                tài phán của Việt Nam có diện tích khoảng <u>1.000.000 km²</u> trên
-                Biển Đông.
+                Đồng Hới (Quảng Trị) với chưa đầy <u>50 km</u>. Đường bờ biển
+                dài <u>3.260 km</u> (không kể các đảo). Ngoài vùng nội thủy,
+                Việt Nam tuyên bố <u>12 hải lý</u> lãnh hải, thêm
+                <u>12 hải lý</u> vùng tiếp giáp lãnh hải, <u>200 hải lý</u> vùng
+                đặc quyền kinh tế và thềm lục địa. Vùng biển thuộc chủ quyền,
+                quyền chủ quyền và quyền tài phán của Việt Nam có diện tích
+                khoảng <u>1.000.000 km²</u> trên Biển Đông.
               </p>
               <p class="w3-source">
                 Nguồn:
@@ -856,7 +876,9 @@
                 <strong>Việt Nam được chia thành ba miền chính:</strong>
               </p>
               <p class="mobile-text">
-                <strong>-----Việt Nam được chia thành ba miền chính:-----</strong>
+                <strong
+                  >-----Việt Nam được chia thành ba miền chính:-----</strong
+                >
               </p>
               <div class="w3-third w3-container w3-margin-bottom">
                 <a
@@ -864,7 +886,9 @@
                   target="_blank"
                 >
                   <div class="w3-container w3-white w3-center bu">
-                    <p><b><u>Miền Nam</u></b></p>
+                    <p>
+                      <b><u>Miền Nam</u></b>
+                    </p>
                   </div>
                 </a>
               </div>
@@ -874,7 +898,9 @@
                   target="_blank"
                 >
                   <div class="w3-container w3-white w3-center bu">
-                    <p><b><u>Miền Trung</u></b></p>
+                    <p>
+                      <b><u>Miền Trung</u></b>
+                    </p>
                   </div>
                 </a>
               </div>
@@ -884,26 +910,32 @@
                   target="_blank"
                 >
                   <div class="w3-container w3-white w3-center bu">
-                    <p><b><u>Miền Bắc</u></b></p>
+                    <p>
+                      <b><u>Miền Bắc</u></b>
+                    </p>
                   </div>
                 </a>
               </div>
               <p>
-                <mark><strong>Phân cấp hành chính Việt Nam</strong></mark><br />
+                <mark><strong>Phân cấp hành chính Việt Nam</strong></mark
+                ><br />
                 Phân cấp hành chính Việt Nam gồm <u>2</u> cấp: cấp tỉnh và tương
-                đương, cấp xã và tương đương. Dưới cấp tỉnh và tương đương là các
-                đơn vị hành chính phường, xã, đặc khu, được gọi chung là cấp xã.
+                đương, cấp xã và tương đương. Dưới cấp tỉnh và tương đương là
+                các đơn vị hành chính phường, xã, đặc khu, được gọi chung là cấp
+                xã.
               </p>
 
               <p>
-                <mark><strong>Đơn vị hành chính cơ sở</strong></mark><br />
+                <mark><strong>Đơn vị hành chính cơ sở</strong></mark
+                ><br />
                 Dưới cấp phường, xã là các khu vực không chính thức với tên gọi
                 khác nhau như khu phố, tổ dân phố, làng, thôn, ấp, khóm, buôn,
                 bản, xóm.
               </p>
 
               <p>
-                <mark><strong>Số lượng đơn vị hành chính</strong></mark><br />
+                <mark><strong>Số lượng đơn vị hành chính</strong></mark
+                ><br />
                 Tính đến năm <u>2025</u>, Việt Nam có tổng cộng <u>34</u> đơn vị
                 hành chính cấp tỉnh và tương đương, bao gồm <u>28</u> tỉnh và
                 <u>6</u> thành phố trực thuộc trung ương.
@@ -913,17 +945,19 @@
                 <strong><h3 class="section-title">Chính Trị</h3></strong>
               </p>
               <p>
-                <mark><strong>Chế độ chính trị Việt Nam</strong></mark><br />
+                <mark><strong>Chế độ chính trị Việt Nam</strong></mark
+                ><br />
                 Việt Nam theo chế độ xã hội chủ nghĩa với cơ chế có duy nhất một
                 đảng chính trị lãnh đạo là Đảng Cộng sản Việt Nam. Vào năm
-                <u>2016</u>, các đại biểu là Đảng viên trong Quốc hội chiếm tỉ lệ
-                <u>95,8%</u>, những người đứng đầu Chính phủ, các Bộ và Quốc hội
-                cũng như các cơ quan tư pháp đều là Đảng viên và do Ban Chấp
+                <u>2016</u>, các đại biểu là Đảng viên trong Quốc hội chiếm tỉ
+                lệ <u>95,8%</u>, những người đứng đầu Chính phủ, các Bộ và Quốc
+                hội cũng như các cơ quan tư pháp đều là Đảng viên và do Ban Chấp
                 hành Trung ương hoặc Bộ Chính trị đề cử.
               </p>
 
               <p>
-                <mark><strong>Đảng Cộng sản Việt Nam</strong></mark><br />
+                <mark><strong>Đảng Cộng sản Việt Nam</strong></mark
+                ><br />
                 Đảng Cộng sản Việt Nam được Điều <u>4</u> Hiến pháp quy định là
                 Đảng cầm quyền, là tổ chức chính trị duy nhất lãnh đạo Nhà nước
                 và xã hội, cam kết thực hiện nguyên tắc Lênin về “tập trung dân
@@ -931,48 +965,54 @@
               </p>
 
               <p>
-                <mark><strong>Tổ chức của Đảng</strong></mark><br />
-                Đại hội Đảng toàn quốc (nhiệm kỳ <u>5</u> năm một lần) là cơ quan
-                quyền lực cao nhất. Đại hội bầu ra Ban Chấp hành Trung ương Đảng
-                – cơ quan quyền lực cao nhất giữa hai kỳ Đại hội. Ban Chấp hành
-                Trung ương bầu ra Bộ Chính trị, Ban Bí thư, Ủy ban Kiểm tra
+                <mark><strong>Tổ chức của Đảng</strong></mark
+                ><br />
+                Đại hội Đảng toàn quốc (nhiệm kỳ <u>5</u> năm một lần) là cơ
+                quan quyền lực cao nhất. Đại hội bầu ra Ban Chấp hành Trung ương
+                Đảng – cơ quan quyền lực cao nhất giữa hai kỳ Đại hội. Ban Chấp
+                hành Trung ương bầu ra Bộ Chính trị, Ban Bí thư, Ủy ban Kiểm tra
                 Trung ương và chức danh Tổng Bí thư – người đứng đầu hệ thống
                 chính trị Việt Nam.
               </p>
 
               <p>
-                <mark><strong>Quốc hội Việt Nam</strong></mark><br />
-                Quốc hội có nhiệm kỳ <u>5</u> năm, đứng đầu là Chủ tịch Quốc hội,
-                là cơ quan đại biểu cao nhất của nhân dân. Quốc hội có quyền lập
-                hiến, lập pháp, giám sát và quyết định các chính sách cơ bản của
-                Nhà nước. Sau Đổi mới, vai trò của Quốc hội ngày càng được nâng
-                cao.
+                <mark><strong>Quốc hội Việt Nam</strong></mark
+                ><br />
+                Quốc hội có nhiệm kỳ <u>5</u> năm, đứng đầu là Chủ tịch Quốc
+                hội, là cơ quan đại biểu cao nhất của nhân dân. Quốc hội có
+                quyền lập hiến, lập pháp, giám sát và quyết định các chính sách
+                cơ bản của Nhà nước. Sau Đổi mới, vai trò của Quốc hội ngày càng
+                được nâng cao.
               </p>
 
               <p>
-                <mark><strong>Chủ tịch nước</strong></mark><br />
-                Chủ tịch nước là nguyên thủ quốc gia, có quyền công bố hiến pháp,
-                luật; là Tổng Tư lệnh lực lượng vũ trang; đề nghị Quốc hội bầu
-                hoặc miễn nhiệm các chức danh quan trọng và đại diện Nhà nước
-                trong đối nội, đối ngoại.
+                <mark><strong>Chủ tịch nước</strong></mark
+                ><br />
+                Chủ tịch nước là nguyên thủ quốc gia, có quyền công bố hiến
+                pháp, luật; là Tổng Tư lệnh lực lượng vũ trang; đề nghị Quốc hội
+                bầu hoặc miễn nhiệm các chức danh quan trọng và đại diện Nhà
+                nước trong đối nội, đối ngoại.
               </p>
 
               <p>
-                <mark><strong>Chính phủ</strong></mark><br />
+                <mark><strong>Chính phủ</strong></mark
+                ><br />
                 Chính phủ là cơ quan chấp hành của Quốc hội và là cơ quan hành
                 chính cao nhất, gồm Thủ tướng, các Phó Thủ tướng, các Bộ trưởng
                 và Thủ trưởng cơ quan ngang Bộ.
               </p>
 
               <p>
-                <mark><strong>Lãnh đạo chủ chốt</strong></mark><br />
+                <mark><strong>Lãnh đạo chủ chốt</strong></mark
+                ><br />
                 Năm chức danh: Tổng Bí thư, Chủ tịch nước, Thủ tướng, Chủ tịch
                 Quốc hội và Thường trực Ban Bí thư được xem là các lãnh đạo chủ
                 chốt của Đảng và Nhà nước Việt Nam.
               </p>
 
               <p>
-                <mark><strong>Hệ thống tư pháp</strong></mark><br />
+                <mark><strong>Hệ thống tư pháp</strong></mark
+                ><br />
                 Tòa án nhân dân tối cao là cơ quan xét xử cao nhất. Bên cạnh đó,
                 Tòa án quân sự có thẩm quyền đặc biệt trong các vấn đề liên quan
                 đến an ninh quốc gia. Viện kiểm sát nhân dân tối cao là cơ quan
@@ -1043,7 +1083,9 @@
             </div>
             <p class="w3-source">
               Nguồn thông tin và hình ảnh:
-              <a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam" target="_blank"
+              <a
+                href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam"
+                target="_blank"
                 >wikipedia - Việt Nam</a
               >
             </p>
@@ -1056,49 +1098,52 @@
                 <div class="about-details">
                   <div class="about-text">
                     <p>
-                      <mark><strong>Khí hậu Việt Nam</strong></mark><br />
-                      Việt Nam có khí hậu nhiệt đới gió mùa, thời tiết có sự biến
-                      động rõ rệt. Phía bắc dãy Bạch Mã có hai mùa gió chính: gió
-                      mùa Đông Bắc lạnh và khô vào mùa đông, tạo nên mùa đông
-                      lạnh; gió Tây Nam nóng khô và gió Đông Nam ẩm ướt vào mùa
-                      hè. Phía nam chịu ảnh hưởng của gió Đông Bắc vào mùa khô và
-                      gió Tây Nam vào mùa mưa. Các dòng biển góp phần điều hòa khí
-                      hậu. Độ ẩm tương đối trung bình khoảng <u>84%</u> quanh
-                      năm. Việt Nam thường xuyên chịu tác động của lũ lụt và
-                      bão, với lượng mưa từ <u>1.200</u> đến <u>3.000 mm</u>, số
-                      giờ nắng khoảng <u>1.500</u> đến <u>3.000 giờ/năm</u> và
-                      nhiệt độ dao động từ <u>5&nbsp;°C</u> đến <u>37&nbsp;°C</u>.
-                      Nhiệt độ trung bình năm đã tăng khoảng <u>0,5&nbsp;°C</u>
-                      trong vòng <u>50 năm</u> (1964–2014).
+                      <mark><strong>Khí hậu Việt Nam</strong></mark
+                      ><br />
+                      Việt Nam có khí hậu nhiệt đới gió mùa, thời tiết có sự
+                      biến động rõ rệt. Phía bắc dãy Bạch Mã có hai mùa gió
+                      chính: gió mùa Đông Bắc lạnh và khô vào mùa đông, tạo nên
+                      mùa đông lạnh; gió Tây Nam nóng khô và gió Đông Nam ẩm ướt
+                      vào mùa hè. Phía nam chịu ảnh hưởng của gió Đông Bắc vào
+                      mùa khô và gió Tây Nam vào mùa mưa. Các dòng biển góp phần
+                      điều hòa khí hậu. Độ ẩm tương đối trung bình khoảng
+                      <u>84%</u> quanh năm. Việt Nam thường xuyên chịu tác động
+                      của lũ lụt và bão, với lượng mưa từ <u>1.200</u> đến
+                      <u>3.000 mm</u>, số giờ nắng khoảng <u>1.500</u> đến
+                      <u>3.000 giờ/năm</u> và nhiệt độ dao động từ
+                      <u>5&nbsp;°C</u> đến <u>37&nbsp;°C</u>. Nhiệt độ trung
+                      bình năm đã tăng khoảng <u>0,5&nbsp;°C</u> trong vòng
+                      <u>50 năm</u> (1964–2014).
                     </p>
 
                     <p>
-                      Dọc theo lãnh thổ kéo dài, khí hậu Việt Nam được chia thành
-                      ba vùng: miền Bắc mang tính chất cận nhiệt đới ẩm, miền
-                      Trung có đặc điểm khí hậu nhiệt đới gió mùa, còn miền Nam
-                      thuộc vùng khí hậu nhiệt đới xavan. Độ ẩm tương đối trung
-                      bình trên cả nước dao động từ <u>84%</u> đến <u>100%</u>. Do
-                      sự khác biệt về vĩ độ và địa hình, khí hậu giữa các vùng có
-                      sự phân hóa rõ rệt.
+                      Dọc theo lãnh thổ kéo dài, khí hậu Việt Nam được chia
+                      thành ba vùng: miền Bắc mang tính chất cận nhiệt đới ẩm,
+                      miền Trung có đặc điểm khí hậu nhiệt đới gió mùa, còn miền
+                      Nam thuộc vùng khí hậu nhiệt đới xavan. Độ ẩm tương đối
+                      trung bình trên cả nước dao động từ <u>84%</u> đến
+                      <u>100%</u>. Do sự khác biệt về vĩ độ và địa hình, khí hậu
+                      giữa các vùng có sự phân hóa rõ rệt.
                     </p>
 
                     <p>
-                      Mùa đông hoặc mùa khô thường kéo dài từ tháng <u>11</u> đến
-                      tháng <u>4</u> năm sau, khi gió mùa Đông Bắc thổi dọc theo bờ
-                      biển Trung Quốc qua vịnh Bắc Bộ, mang theo nhiều hơi ẩm. Mùa
-                      hè, từ tháng <u>5</u> đến tháng <u>10</u>, gió mùa Tây Nam
-                      hoạt động mạnh, không khí nóng kết hợp với hơi ẩm từ biển
-                      gây mưa lớn trên diện rộng.
+                      Mùa đông hoặc mùa khô thường kéo dài từ tháng
+                      <u>11</u> đến tháng <u>4</u> năm sau, khi gió mùa Đông Bắc
+                      thổi dọc theo bờ biển Trung Quốc qua vịnh Bắc Bộ, mang
+                      theo nhiều hơi ẩm. Mùa hè, từ tháng <u>5</u> đến tháng
+                      <u>10</u>, gió mùa Tây Nam hoạt động mạnh, không khí nóng
+                      kết hợp với hơi ẩm từ biển gây mưa lớn trên diện rộng.
                     </p>
 
                     <p>
-                      Lượng mưa trung bình năm ở các vùng dao động từ <u>120</u>
-                      đến <u>300 cm</u>, trong đó gần <u>90%</u> lượng mưa tập trung
-                      vào mùa hè. Nhiệt độ trung bình năm ở đồng bằng thường cao
-                      hơn vùng núi và cao nguyên. Nhiệt độ thấp nhất khoảng
-                      <u>5&nbsp;°C</u> vào tháng <u>12–1</u>, trong khi nhiệt độ cao
-                      nhất có thể vượt <u>37&nbsp;°C</u> vào tháng <u>7</u>. Ở miền
-                      Nam, nhiệt độ quanh năm ít biến động, phổ biến trong khoảng
+                      Lượng mưa trung bình năm ở các vùng dao động từ
+                      <u>120</u> đến <u>300 cm</u>, trong đó gần
+                      <u>90%</u> lượng mưa tập trung vào mùa hè. Nhiệt độ trung
+                      bình năm ở đồng bằng thường cao hơn vùng núi và cao
+                      nguyên. Nhiệt độ thấp nhất khoảng <u>5&nbsp;°C</u> vào
+                      tháng <u>12–1</u>, trong khi nhiệt độ cao nhất có thể vượt
+                      <u>37&nbsp;°C</u> vào tháng <u>7</u>. Ở miền Nam, nhiệt độ
+                      quanh năm ít biến động, phổ biến trong khoảng
                       <u>21–28&nbsp;°C</u>.
                     </p>
                     <p class="w3-source">
@@ -1127,51 +1172,54 @@
                 <div class="about-details">
                   <div class="about-text">
                     <p>
-                      <mark><strong>Đa dạng sinh học Việt Nam</strong></mark><br />
+                      <mark><strong>Đa dạng sinh học Việt Nam</strong></mark
+                      ><br />
                       Việt Nam nằm trong vùng sinh thái Indomalaya. Theo Báo cáo
-                      tình trạng môi trường quốc gia năm <u>2005</u>, Việt Nam là
-                      một trong <u>25</u> quốc gia có mức độ đa dạng sinh học cao
-                      trên thế giới, xếp thứ <u>16</u> toàn cầu và là nơi sinh
-                      sống của khoảng <u>16%</u> tổng số loài sinh vật trên Trái
-                      Đất. Cả nước đã ghi nhận <u>15.986</u> loài thực vật, trong
-                      đó khoảng <u>10%</u> là loài đặc hữu. Hệ động vật rất phong
-                      phú với <u>307</u> loài giun tròn, <u>200</u> loài oligochaeta,
-                      <u>145</u> loài acarina, <u>113</u> loài bọ đuôi bật,
-                      <u>7.750</u> loài côn trùng, <u>260</u> loài bò sát,
-                      <u>120</u> loài lưỡng cư, <u>840</u> loài chim và <u>310</u>
-                      loài thú, trong đó có <u>100</u> loài chim và <u>78</u> loài
-                      thú là loài đặc hữu.
+                      tình trạng môi trường quốc gia năm <u>2005</u>, Việt Nam
+                      là một trong <u>25</u> quốc gia có mức độ đa dạng sinh học
+                      cao trên thế giới, xếp thứ <u>16</u> toàn cầu và là nơi
+                      sinh sống của khoảng <u>16%</u> tổng số loài sinh vật trên
+                      Trái Đất. Cả nước đã ghi nhận <u>15.986</u> loài thực vật,
+                      trong đó khoảng <u>10%</u> là loài đặc hữu. Hệ động vật
+                      rất phong phú với <u>307</u> loài giun tròn,
+                      <u>200</u> loài oligochaeta, <u>145</u> loài acarina,
+                      <u>113</u> loài bọ đuôi bật, <u>7.750</u> loài côn trùng,
+                      <u>260</u> loài bò sát, <u>120</u> loài lưỡng cư,
+                      <u>840</u> loài chim và <u>310</u> loài thú, trong đó có
+                      <u>100</u> loài chim và <u>78</u> loài thú là loài đặc
+                      hữu.
                     </p>
 
                     <p>
                       Ngoài ra, Việt Nam còn có <u>1.438</u> loài tảo nước ngọt,
-                      chiếm <u>9,6%</u> tổng số loài tảo, cùng với <u>794</u> loài
-                      thủy sinh không xương sống và <u>2.458</u> loài cá biển. Vào
-                      cuối những năm <u>1980</u>, một quần thể tê giác Java được
-                      phát hiện tại Vườn quốc gia Cát Tiên; tuy nhiên, cá thể cuối
-                      cùng của loài này tại Việt Nam được cho là đã chết vào năm
-                      <u>2010</u>.
+                      chiếm <u>9,6%</u> tổng số loài tảo, cùng với
+                      <u>794</u> loài thủy sinh không xương sống và
+                      <u>2.458</u> loài cá biển. Vào cuối những năm <u>1980</u>,
+                      một quần thể tê giác Java được phát hiện tại Vườn quốc gia
+                      Cát Tiên; tuy nhiên, cá thể cuối cùng của loài này tại
+                      Việt Nam được cho là đã chết vào năm <u>2010</u>.
                     </p>
 
                     <p>
                       Ngân hàng gen quốc gia Việt Nam hiện đang bảo tồn
                       <u>12.300</u> giống thuộc <u>115</u> loài. Trong năm
                       <u>2004</u>, Chính phủ Việt Nam đã chi khoảng
-                      <u>497 triệu</u> đô la Mỹ cho công tác bảo tồn đa dạng sinh
-                      học và thiết lập <u>126</u> khu bảo tồn, trong đó có <u>28</u>
-                      vườn quốc gia. Việt Nam có <u>2</u> di sản thiên nhiên thế
-                      giới là Vịnh Hạ Long và Vườn quốc gia Phong Nha – Kẻ Bàng,
-                      cùng <u>6</u> khu dự trữ sinh quyển gồm Cần Giờ, Cát Tiên,
-                      Cát Bà, Kiên Giang, Đồng bằng sông Hồng và Tây Nghệ An.
+                      <u>497 triệu</u> đô la Mỹ cho công tác bảo tồn đa dạng
+                      sinh học và thiết lập <u>126</u> khu bảo tồn, trong đó có
+                      <u>28</u> vườn quốc gia. Việt Nam có <u>2</u> di sản thiên
+                      nhiên thế giới là Vịnh Hạ Long và Vườn quốc gia Phong Nha
+                      – Kẻ Bàng, cùng <u>6</u> khu dự trữ sinh quyển gồm Cần
+                      Giờ, Cát Tiên, Cát Bà, Kiên Giang, Đồng bằng sông Hồng và
+                      Tây Nghệ An.
                     </p>
                     <p>
-                      Việt Nam đã giữ gìn và bảo tồn một số vườn quốc gia đa dạng
-                      sinh học quý hiếm như Vườn quốc gia Hoàng Liên Sơn (khu
-                      vực núi Phan-xi-păng, Lào Cai), Vườn quốc gia Cát Bà (Quảng
-                      Ninh), vườn quốc gia Cúc Phương (Ninh Bình), vườn quốc gia
-                      Pù-mát (Quảng Bình), vườn quốc gia Phong Nha-Kẻ Bàng
-                      (Quảng Bình), vườn quốc gia Bạch Mã (Thừa Thiên Huế), vườn
-                      quốc gia Côn Đảo (đảo Côn Sơn, Bà Rịa-Vũng Tàu), vườn
+                      Việt Nam đã giữ gìn và bảo tồn một số vườn quốc gia đa
+                      dạng sinh học quý hiếm như Vườn quốc gia Hoàng Liên Sơn
+                      (khu vực núi Phan-xi-păng, Lào Cai), Vườn quốc gia Cát Bà
+                      (Quảng Ninh), vườn quốc gia Cúc Phương (Ninh Bình), vườn
+                      quốc gia Pù-mát (Quảng Bình), vườn quốc gia Phong Nha-Kẻ
+                      Bàng (Quảng Bình), vườn quốc gia Bạch Mã (Thừa Thiên Huế),
+                      vườn quốc gia Côn Đảo (đảo Côn Sơn, Bà Rịa-Vũng Tàu), vườn
                       quốc gia Cát Tiên (Đồng Nai)… Các vườn quốc gia này là nơi
                       cho các nhà sinh học Việt Nam và thế giới nhiên cứu khoa
                       học, đồng thời là những nơi du lịch sinh thái hấp dẫn.
@@ -1211,7 +1259,8 @@
           <div class="about-details">
             <div class="about-text">
               <p>
-                <mark><strong>Vị trí địa lý và lãnh thổ</strong></mark><br />
+                <mark><strong>Vị trí địa lý và lãnh thổ</strong></mark
+                ><br />
                 Việt Nam có diện tích <u>331.212 km²</u>, đường biên giới trên
                 đất liền dài <u>4.639 km</u>, đường bờ biển trải dài
                 <u>3.260 km</u>, có chung đường biên giới trên biển với Thái Lan
@@ -1223,23 +1272,24 @@
               </p>
 
               <p>
-                <mark><strong>Hình dạng lãnh thổ</strong></mark><br />
+                <mark><strong>Hình dạng lãnh thổ</strong></mark
+                ><br />
                 Khoảng cách giữa cực Bắc và cực Nam của Việt Nam theo đường chim
                 bay là <u>1.650 km</u>. Nơi có chiều ngang hẹp nhất ở Quảng Bình
                 với chưa đầy <u>50 km</u>. Đường biên giới đất liền dài hơn
                 <u>4.600 km</u>, trong đó biên giới với Lào dài nhất (gần
                 <u>2.100 km</u>), tiếp đến là Trung Quốc và Campuchia. Tổng diện
-                tích <u>331.212 km²</u> gồm toàn bộ phần đất liền và hải đảo cùng
-                hơn <u>4.000</u> hòn đảo, bãi đá ngầm và hai quần đảo Trường Sa
-                (thuộc tỉnh Khánh Hòa) và Hoàng Sa (thuộc thành phố Đà Nẵng) mà
-                Nhà nước tuyên bố chủ quyền.
+                tích <u>331.212 km²</u> gồm toàn bộ phần đất liền và hải đảo
+                cùng hơn <u>4.000</u> hòn đảo, bãi đá ngầm và hai quần đảo
+                Trường Sa (thuộc tỉnh Khánh Hòa) và Hoàng Sa (thuộc thành phố Đà
+                Nẵng) mà Nhà nước tuyên bố chủ quyền.
               </p>
               <p class="w3-source">
                 Nguồn thông tin:
                 <a
                   href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam"
                   target="_blank"
-                  style="text-decoration: underline;"
+                  style="text-decoration: underline"
                   >wikipedia - Việt Nam</a
                 >
               </p>
@@ -1259,20 +1309,22 @@
           <div class="about-details">
             <div class="about-text">
               <p>
-                <mark><strong>Đặc điểm địa hình Việt Nam</strong></mark><br />
+                <mark><strong>Đặc điểm địa hình Việt Nam</strong></mark
+                ><br />
                 Việt Nam là một quốc gia nhiệt đới với địa hình phần lớn là đồi
                 núi, chiếm khoảng <u>3/4</u> diện tích lãnh thổ, chủ yếu là đồi
-                núi thấp; trong khi đó đồng bằng chỉ chiếm khoảng <u>1/4</u> diện
-                tích. Trên phạm vi cả nước, địa hình đồng bằng và đồi núi thấp
-                (dưới <u>1.000 m</u>) chiếm tới <u>85%</u> diện tích, còn địa hình
-                núi cao (trên <u>2.000 m</u>) chỉ chiếm khoảng <u>1%</u>. Cấu
-                trúc địa hình đa dạng do tác động của vận động Tân kiến tạo làm
-                trẻ lại, tạo nên sự phân bậc rõ rệt và có xu hướng thấp dần từ
-                tây bắc xuống đông nam. Diện tích đất có khả năng sử dụng cho
-                nông nghiệp chiếm chưa tới <u>20%</u>. Lãnh thổ Việt Nam được chia
-                thành các khu vực địa hình lớn gồm miền núi và đồng bằng sông
-                Hồng ở phía Bắc; dãy Trường Sơn, Tây Nguyên, đồng bằng duyên hải
-                miền Trung; và đồng bằng sông Cửu Long ở phía Nam.
+                núi thấp; trong khi đó đồng bằng chỉ chiếm khoảng
+                <u>1/4</u> diện tích. Trên phạm vi cả nước, địa hình đồng bằng
+                và đồi núi thấp (dưới <u>1.000 m</u>) chiếm tới <u>85%</u> diện
+                tích, còn địa hình núi cao (trên <u>2.000 m</u>) chỉ chiếm
+                khoảng <u>1%</u>. Cấu trúc địa hình đa dạng do tác động của vận
+                động Tân kiến tạo làm trẻ lại, tạo nên sự phân bậc rõ rệt và có
+                xu hướng thấp dần từ tây bắc xuống đông nam. Diện tích đất có
+                khả năng sử dụng cho nông nghiệp chiếm chưa tới <u>20%</u>. Lãnh
+                thổ Việt Nam được chia thành các khu vực địa hình lớn gồm miền
+                núi và đồng bằng sông Hồng ở phía Bắc; dãy Trường Sơn, Tây
+                Nguyên, đồng bằng duyên hải miền Trung; và đồng bằng sông Cửu
+                Long ở phía Nam.
               </p>
               <p>
                 Có các dãy núi và cao nguyên như dãy Hoàng Liên Sơn, cao nguyên
@@ -1309,11 +1361,12 @@
           <div class="about-details">
             <div class="about-text">
               <p>
-                <mark><strong>Tài nguyên khoáng sản Việt Nam</strong></mark> phân
-                bố rộng khắp từ Bắc đến Nam, với hơn <u>5.000 mỏ và điểm quặng</u>
-                thuộc trên <u>60 loại khoáng sản</u> khác nhau. Nhiều loại có
-                trữ lượng lớn, đóng vai trò quan trọng trong phát triển kinh tế –
-                xã hội, đặc biệt trong giai đoạn công nghiệp hóa – hiện đại hóa.
+                <mark><strong>Tài nguyên khoáng sản Việt Nam</strong></mark>
+                phân bố rộng khắp từ Bắc đến Nam, với hơn
+                <u>5.000 mỏ và điểm quặng</u> thuộc trên
+                <u>60 loại khoáng sản</u> khác nhau. Nhiều loại có trữ lượng
+                lớn, đóng vai trò quan trọng trong phát triển kinh tế – xã hội,
+                đặc biệt trong giai đoạn công nghiệp hóa – hiện đại hóa.
               </p>
 
               <p>
@@ -1332,34 +1385,37 @@
               <p>
                 Trữ lượng <strong>dầu mỏ</strong> của Việt Nam ước khoảng
                 <u>6 tỷ tấn</u> và <strong>khí đốt</strong> khoảng
-                <u>4.000 tỷ m³</u>, phân bố chủ yếu tại các bể trầm tích từ Nam ra
-                Bắc.
+                <u>4.000 tỷ m³</u>, phân bố chủ yếu tại các bể trầm tích từ Nam
+                ra Bắc.
               </p>
 
               <p>
-                <mark><strong>Đóng góp của ngành khai khoáng</strong></mark>: Năm
-                <u>2012</u>, Việt Nam đứng <u>thứ 7</u> về khai thác dầu thô tại
-                khu vực châu Á – Thái Bình Dương (khoảng <u>110 triệu thùng</u>).
-                Giai đoạn <u>2008–2013</u>, đóng góp của ngành khai khoáng vào
-                GDP tăng từ <u>9,07%</u> lên <u>11,49%</u>, tương đương
-                <u>411.673 tỷ đồng</u>.
+                <mark><strong>Đóng góp của ngành khai khoáng</strong></mark
+                >: Năm <u>2012</u>, Việt Nam đứng <u>thứ 7</u> về khai thác dầu
+                thô tại khu vực châu Á – Thái Bình Dương (khoảng
+                <u>110 triệu thùng</u>). Giai đoạn <u>2008–2013</u>, đóng góp
+                của ngành khai khoáng vào GDP tăng từ <u>9,07%</u> lên
+                <u>11,49%</u>, tương đương <u>411.673 tỷ đồng</u>.
               </p>
 
               <p>
-                <mark><strong>Một số khoáng sản quan trọng khác</strong></mark>:
+                <mark><strong>Một số khoáng sản quan trọng khác</strong></mark
+                >:
               </p>
 
               <ul>
                 <li>
-                  Quặng sắt: trữ lượng khoảng <u>1,3 tỷ tấn</u>, nhu cầu năm 2025
-                  khoảng <u>32 triệu tấn</u>
+                  Quặng sắt: trữ lượng khoảng <u>1,3 tỷ tấn</u>, nhu cầu năm
+                  2025 khoảng <u>32 triệu tấn</u>
                 </li>
                 <li>
                   Titan: khoảng <u>650 triệu tấn</u>, có thể khai thác
                   <u>440 triệu tấn</u>
                 </li>
                 <li>Vàng: khoảng <u>154 tấn</u> (thăm dò <u>42,7 tấn</u>)</li>
-                <li>Wonfram: <u>195 nghìn tấn</u>; Antimon: <u>67 nghìn tấn</u></li>
+                <li>
+                  Wonfram: <u>195 nghìn tấn</u>; Antimon: <u>67 nghìn tấn</u>
+                </li>
                 <li>Đồng: khoảng <u>1 triệu tấn</u></li>
                 <li>
                   Niken: khoảng <u>4,5 triệu tấn</u>, chủ yếu tại mỏ Bản Phúc
@@ -1370,8 +1426,8 @@
               <p>
                 Từ năm <u>2013</u>, Việt Nam giảm mạnh xuất khẩu than do nhu cầu
                 trong nước tăng. Điều này cho thấy
-                <strong>tài nguyên không phải là vô tận</strong>, và mô hình phát
-                triển dựa chủ yếu vào khai thác tài nguyên
+                <strong>tài nguyên không phải là vô tận</strong>, và mô hình
+                phát triển dựa chủ yếu vào khai thác tài nguyên
                 <strong>không bền vững</strong>.
               </p>
 
@@ -1460,32 +1516,35 @@
             <div class="about-details">
               <div class="about-text">
                 <p>
-                  <mark><strong>1. Đặc điểm khí hậu Việt Nam</strong></mark><br />
+                  <mark><strong>1. Đặc điểm khí hậu Việt Nam</strong></mark
+                  ><br />
                   Nằm ở bán cầu Bắc trong vòng đai khí hậu nhiệt đới, Việt Nam
                   có khí hậu nhiệt đới ẩm gió mùa với những đặc trưng tiêu biểu
                   của kiểu khí hậu này.
                 </p>
 
                 <p>
-                  <mark><strong>1.1. Tính chất nhiệt đới</strong></mark><br />
+                  <mark><strong>1.1. Tính chất nhiệt đới</strong></mark
+                  ><br />
                   Việt Nam hằng năm nhận được lượng bức xạ lớn từ Mặt Trời, tạo
                   nên nền nhiệt cao, đặc biệt ở khu vực phía Nam – nơi gần xích
                   đạo.
                 </p>
 
                 <p>
-                  Nhiệt độ trung bình năm của cả nước dao động từ <u>22 – 27°C</u>,
-                  phù hợp với tiêu chuẩn khí hậu nhiệt đới, thậm chí có nơi vượt
-                  ngưỡng này.
+                  Nhiệt độ trung bình năm của cả nước dao động từ
+                  <u>22 – 27°C</u>, phù hợp với tiêu chuẩn khí hậu nhiệt đới,
+                  thậm chí có nơi vượt ngưỡng này.
                 </p>
 
                 <p>
-                  Tổng số giờ nắng trung bình khoảng <u>3.000 giờ/năm</u>, tuy có
-                  sự khác nhau giữa các vùng do đặc điểm địa hình.
+                  Tổng số giờ nắng trung bình khoảng <u>3.000 giờ/năm</u>, tuy
+                  có sự khác nhau giữa các vùng do đặc điểm địa hình.
                 </p>
 
                 <p>
-                  <mark><strong>1.2. Tính chất ẩm</strong></mark><br />
+                  <mark><strong>1.2. Tính chất ẩm</strong></mark
+                  ><br />
                   Lượng mưa trung bình năm của Việt Nam khá lớn, phổ biến từ
                   <u>1.400 – 2.400 mm</u>, trong đó khoảng <u>80 – 90%</u> tập
                   trung vào mùa mưa.
@@ -1497,7 +1556,8 @@
                 </p>
 
                 <p>
-                  <mark><strong>1.3. Tính chất gió mùa</strong></mark><br />
+                  <mark><strong>1.3. Tính chất gió mùa</strong></mark
+                  ><br />
                   Khí hậu Việt Nam chịu tác động của nhiều loại gió, trong đó
                   gió mùa giữ vai trò chủ đạo.
                 </p>
@@ -1531,7 +1591,10 @@
                 </p>
 
                 <p>
-                  <mark><strong>2. Sự phân hóa sâu sắc của khí hậu Việt Nam</strong></mark
+                  <mark
+                    ><strong
+                      >2. Sự phân hóa sâu sắc của khí hậu Việt Nam</strong
+                    ></mark
                   ><br />
                   Mặc dù nằm hoàn toàn trong vùng nhiệt đới, khí hậu Việt Nam
                   phân hóa rõ rệt thành các miền khác nhau.
@@ -1551,47 +1614,55 @@
                   </li>
                   <li>
                     <strong>Miền Nam:</strong> Khí hậu nhiệt đới điển hình với
-                    <u>2 mùa</u> rõ rệt là mùa mưa và mùa khô. Mùa mưa bắt đầu từ
-                    cuối <u>tháng 4 – đầu tháng 5</u> và kéo dài đến
+                    <u>2 mùa</u> rõ rệt là mùa mưa và mùa khô. Mùa mưa bắt đầu
+                    từ cuối <u>tháng 4 – đầu tháng 5</u> và kéo dài đến
                     <u>tháng 10</u>.
                   </li>
                 </ul>
                 <p>
-                  <mark><strong>Khí hậu nước ta phân hoá theo chiều Bắc – Nam:</strong></mark>
-                  Miền khí hậu phía Bắc (từ dãy Bạch Mã trở ra) có nhiệt độ trung
-                  bình năm trên <u>20°C</u>, mùa đông lạnh (đầu mùa đông khô, cuối
-                  mùa đông ẩm), mùa hạ nóng ẩm và mưa nhiều. Miền khí hậu phía Nam
-                  (từ dãy Bạch Mã trở vào) có nhiệt độ trung bình năm trên
-                  <u>25°C</u>, không có tháng nào dưới <u>20°C</u>, biên độ nhiệt
-                  trung bình năm nhỏ hơn <u>9°C</u> và phân hoá rõ rệt thành mùa
-                  mưa – mùa khô.
+                  <mark
+                    ><strong
+                      >Khí hậu nước ta phân hoá theo chiều Bắc – Nam:</strong
+                    ></mark
+                  >
+                  Miền khí hậu phía Bắc (từ dãy Bạch Mã trở ra) có nhiệt độ
+                  trung bình năm trên <u>20°C</u>, mùa đông lạnh (đầu mùa đông
+                  khô, cuối mùa đông ẩm), mùa hạ nóng ẩm và mưa nhiều. Miền khí
+                  hậu phía Nam (từ dãy Bạch Mã trở vào) có nhiệt độ trung bình
+                  năm trên <u>25°C</u>, không có tháng nào dưới <u>20°C</u>,
+                  biên độ nhiệt trung bình năm nhỏ hơn <u>9°C</u> và phân hoá rõ
+                  rệt thành mùa mưa – mùa khô.
                 </p>
 
                 <p>
-                  <mark><strong>Khí hậu phân hoá theo chiều Đông – Tây:</strong></mark>
+                  <mark
+                    ><strong
+                      >Khí hậu phân hoá theo chiều Đông – Tây:</strong
+                    ></mark
+                  >
                   Giữa vùng biển và đất liền, giữa đồng bằng ven biển phía đông
                   và vùng đồi núi phía tây có sự khác biệt rõ rệt. Vùng biển và
-                  thềm lục địa có khí hậu ôn hoà hơn đất liền; đồng bằng ven biển
-                  mang tính nhiệt đới ẩm gió mùa; vùng đồi núi phía tây có khí
-                  hậu phân hoá phức tạp do tác động của gió mùa và hướng các dãy
-                  núi.
+                  thềm lục địa có khí hậu ôn hoà hơn đất liền; đồng bằng ven
+                  biển mang tính nhiệt đới ẩm gió mùa; vùng đồi núi phía tây có
+                  khí hậu phân hoá phức tạp do tác động của gió mùa và hướng các
+                  dãy núi.
                 </p>
 
                 <p>
-                  <mark><strong>Khí hậu phân hoá theo độ cao:</strong></mark> Ở đai
-                  thấp (miền Bắc đến <u>600 – 700 m</u>, miền Nam đến
-                  <u>900 – 1.000 m</u>) là khí hậu nhiệt đới gió mùa, mùa hạ nóng
-                  với nhiệt độ trên <u>25°C</u>. Lên cao hơn (dưới <u>2.600 m</u>)
-                  là khí hậu cận nhiệt đới gió mùa trên núi, nhiệt độ trung bình
-                  các tháng dưới <u>25°C</u>. Từ <u>2.600 m</u> trở lên là khí hậu
-                  ôn đới gió mùa trên núi, các tháng có nhiệt độ trung bình dưới
-                  <u>15°C</u>.
+                  <mark><strong>Khí hậu phân hoá theo độ cao:</strong></mark> Ở
+                  đai thấp (miền Bắc đến <u>600 – 700 m</u>, miền Nam đến
+                  <u>900 – 1.000 m</u>) là khí hậu nhiệt đới gió mùa, mùa hạ
+                  nóng với nhiệt độ trên <u>25°C</u>. Lên cao hơn (dưới
+                  <u>2.600 m</u>) là khí hậu cận nhiệt đới gió mùa trên núi,
+                  nhiệt độ trung bình các tháng dưới <u>25°C</u>. Từ
+                  <u>2.600 m</u> trở lên là khí hậu ôn đới gió mùa trên núi, các
+                  tháng có nhiệt độ trung bình dưới <u>15°C</u>.
                 </p>
 
                 <p>
-                  <mark><strong>Khí hậu phân hoá theo mùa:</strong></mark> Mùa hạ
-                  chịu ảnh hưởng của gió mùa Tây Nam, mùa đông chịu tác động của
-                  gió mùa Đông Bắc.
+                  <mark><strong>Khí hậu phân hoá theo mùa:</strong></mark> Mùa
+                  hạ chịu ảnh hưởng của gió mùa Tây Nam, mùa đông chịu tác động
+                  của gió mùa Đông Bắc.
                 </p>
 
                 <p>Khí hậu Việt Nam còn phân hóa theo không gian:</p>
@@ -1604,14 +1675,14 @@
 
                 <p>
                   Ở vùng núi cao, khí hậu phân hóa theo đai cao, tiêu biểu tại
-                  Tây Bắc với <u>3 đai khí hậu</u>: nhiệt đới, cận nhiệt và ôn đới
-                  núi cao.
+                  Tây Bắc với <u>3 đai khí hậu</u>: nhiệt đới, cận nhiệt và ôn
+                  đới núi cao.
                 </p>
 
                 <p>
-                  Ngoài ra, khí hậu Việt Nam còn mang tính thất thường, biểu hiện
-                  qua các năm rét sớm – rét muộn, mưa nhiều – khô hạn, bão nhiều
-                  – bão ít.
+                  Ngoài ra, khí hậu Việt Nam còn mang tính thất thường, biểu
+                  hiện qua các năm rét sớm – rét muộn, mưa nhiều – khô hạn, bão
+                  nhiều – bão ít.
                 </p>
 
                 <p>
@@ -1653,7 +1724,10 @@
                 </p>
 
                 <p>
-                  <mark>a) Mạng lưới sông ngòi dày đặc, phân bố rộng khắp cả nước</mark><br />
+                  <mark
+                    >a) Mạng lưới sông ngòi dày đặc, phân bố rộng khắp cả
+                    nước</mark
+                  ><br />
                   - Nước ta có <u>2360 con sông</u> dài trên 10 km.<br />
                   - Mật độ trung bình mạng lưới sông khoảng
                   <u>0,66 km/km²</u>, ở đồng bằng có thể cao hơn, từ
@@ -1665,40 +1739,42 @@
                 <p>
                   <mark>b) Lưu lượng nước lớn, giàu phù sa</mark><br />
                   - Sông ngòi nước ta có
-                  <u>tổng lượng nước lớn (khoảng 839 tỉ m³/năm)</u>, phân bố không
-                  đều giữa các hệ thống sông. Trong đó, hệ thống sông Mê Công
-                  chiếm tới <u>60,4%</u> lưu lượng cả nước.<br />
+                  <u>tổng lượng nước lớn (khoảng 839 tỉ m³/năm)</u>, phân bố
+                  không đều giữa các hệ thống sông. Trong đó, hệ thống sông Mê
+                  Công chiếm tới <u>60,4%</u> lưu lượng cả nước.<br />
                   - Sông ngòi mang theo lượng phù sa rất lớn, khoảng
                   <u>200 triệu tấn/năm</u>, riêng sông Hồng đạt
-                  <u>120 triệu tấn/năm</u>, chiếm <u>60%</u> tổng lượng phù sa cả
-                  nước.
+                  <u>120 triệu tấn/năm</u>, chiếm <u>60%</u> tổng lượng phù sa
+                  cả nước.
                 </p>
 
                 <p>
-                  <mark>c) Phần lớn sông ngòi chảy theo hai hướng chính</mark><br />
-                  - Chủ yếu theo hướng <u>tây bắc – đông nam</u> (sông Hồng, sông
-                  Mã, sông Tiền…) và hướng <u>vòng cung</u> (sông Lô, sông Gâm,
-                  sông Cầu…).<br />
+                  <mark>c) Phần lớn sông ngòi chảy theo hai hướng chính</mark
+                  ><br />
+                  - Chủ yếu theo hướng <u>tây bắc – đông nam</u> (sông Hồng,
+                  sông Mã, sông Tiền…) và hướng <u>vòng cung</u> (sông Lô, sông
+                  Gâm, sông Cầu…).<br />
                   - Một số sông chảy theo hướng khác như
-                  <u>đông nam – tây bắc</u> (sông Kỳ Cùng), <u>đông – tây</u>
-                  (sông Srêpôk, sông Sê San…).<br />
+                  <u>đông nam – tây bắc</u> (sông Kỳ Cùng),
+                  <u>đông – tây</u> (sông Srêpôk, sông Sê San…).<br />
                   - Hầu hết các sông đều đổ ra Biển Đông.
                 </p>
 
                 <p>
                   <mark>d) Chế độ dòng chảy theo hai mùa rõ rệt</mark><br />
-                  + Chế độ dòng chảy phụ thuộc chặt chẽ vào chế độ mưa, gồm mùa lũ
-                  (mùa mưa) và mùa cạn (mùa khô).<br />
+                  + Chế độ dòng chảy phụ thuộc chặt chẽ vào chế độ mưa, gồm mùa
+                  lũ (mùa mưa) và mùa cạn (mùa khô).<br />
                   + Nguyên nhân chính là do nguồn cung cấp nước sông chủ yếu từ
                   nước mưa.
                 </p>
 
                 <p>
-                  <mark><b>2. Một số hệ thống sông lớn ở nước ta</b></mark><br />
+                  <mark><b>2. Một số hệ thống sông lớn ở nước ta</b></mark
+                  ><br />
                   Việt Nam có <u>9 hệ thống sông lớn</u> với diện tích lưu vực
                   trên <u>10.000 km²</u>. Các hệ thống sông có đặc điểm mạng
-                  lưới và chế độ nước khác nhau, tiêu biểu như hệ thống sông Hồng,
-                  sông Thu Bồn và sông Cửu Long.
+                  lưới và chế độ nước khác nhau, tiêu biểu như hệ thống sông
+                  Hồng, sông Thu Bồn và sông Cửu Long.
                 </p>
               </div>
             </div>
@@ -1725,7 +1801,7 @@
               </p>
             </div>
             <div class="career-content">
-              <h3 class="career-title"><STRong>Hệ thống sông Hồng</STRong></h3>
+              <h3 class="career-title"><strong>Hệ thống sông Hồng</strong></h3>
               <p class="career-description">
                 <b>* Đặc điểm mạng lưới sông:</b><br />
                 - Là hệ thống sông lớn thứ <u>2</u> cả nước, sau hệ thống sông
@@ -1776,7 +1852,9 @@
               </p>
             </div>
             <div class="career-content">
-              <h3 class="career-title"><strong>Hệ thống sông Thu Bồn</strong></h3>
+              <h3 class="career-title">
+                <strong>Hệ thống sông Thu Bồn</strong>
+              </h3>
               <p class="career-description">
                 <b>* Đặc điểm mạng lưới sông:</b><br />
                 - Sông Thu Bồn dài <u>205 km</u>, bắt nguồn từ vùng núi Trường
@@ -1826,16 +1904,20 @@
               </p>
             </div>
             <div class="career-content">
-              <h3 class="career-title"><strong>Hệ thống Sông Cửu Long</strong></h3>
+              <h3 class="career-title">
+                <strong>Hệ thống Sông Cửu Long</strong>
+              </h3>
               <p class="career-description">
                 <b>* Đặc điểm mạng lưới sông:</b><br />
                 - Sông Cửu Long (sông Mê Công) có chiều dài dòng chính khoảng
-                <u>4.300 km</u>, bắt nguồn từ cao nguyên Tây Tạng (Trung Quốc).<br />
+                <u>4.300 km</u>, bắt nguồn từ cao nguyên Tây Tạng (Trung
+                Quốc).<br />
                 - Đây là một trong những hệ thống sông lớn trên thế giới, chảy
-                qua <u>6 quốc gia</u>. Trong phần lưu vực thuộc lãnh thổ Việt Nam,
-                sông có chiều dài hơn <u>230 km</u>.<br />
+                qua <u>6 quốc gia</u>. Trong phần lưu vực thuộc lãnh thổ Việt
+                Nam, sông có chiều dài hơn <u>230 km</u>.<br />
                 - Hệ thống sông có nhiều phụ lưu; riêng tại Việt Nam có
-                <u>286 phụ lưu</u>, trong đó lớn nhất là sông <u>Srê Pốk</u>.<br />
+                <u>286 phụ lưu</u>, trong đó lớn nhất là sông
+                <u>Srê Pốk</u>.<br />
                 - Hai chi lưu lớn ở Việt Nam là sông <u>Tiền</u> và sông
                 <u>Hậu</u>, chia thành nhiều sông nhỏ cùng hệ thống kênh rạch
                 chằng chịt.<br />
@@ -1847,7 +1929,8 @@
                 - Mùa lũ kéo dài từ tháng <u>7</u> đến tháng <u>11</u>, lượng
                 nước mùa lũ chiếm hơn <u>75%</u> tổng lượng nước cả năm. Trong
                 mùa lũ, mực nước lên và xuống chậm do mạng lưới sông dạng lông
-                chim và được điều tiết bởi hồ <u>Tôn-lê Sáp</u> (Campuchia).<br />
+                chim và được điều tiết bởi hồ
+                <u>Tôn-lê Sáp</u> (Campuchia).<br />
                 - Mùa cạn từ tháng <u>12</u> đến tháng <u>6</u> năm sau, lượng
                 nước chỉ chiếm khoảng <u>25%</u> tổng lượng nước năm.
               </p>
@@ -1869,7 +1952,7 @@
       <div class="section-container">
         <header class="section-header">
           <h2 class="section-title">
-            <STRong>VAI TRÒ CỦA KHÍ HẬU VÀ TÀI NGUYÊN NƯỚC</STRong>
+            <strong>VAI TRÒ CỦA KHÍ HẬU VÀ TÀI NGUYÊN NƯỚC</strong>
           </h2>
           <div class="section-divider"></div>
           <p class="section-subtitle"></p>
@@ -1910,8 +1993,8 @@
             <h3 class="quality-title">Đối với sự phát triển du lịch</h3>
             <p class="quality-description">
               - Khí hậu nhiệt đới ẩm gió mùa, có sự phân hóa theo mùa và theo
-              đai cao ở nước ta đã tác động trực tiếp đến sự hình thành các
-              điểm du lịch, loại hình du lịch, mùa vụ du lịch… <br />
+              đai cao ở nước ta đã tác động trực tiếp đến sự hình thành các điểm
+              du lịch, loại hình du lịch, mùa vụ du lịch… <br />
               + Ở các khu vực đồi núi, sự phân hoá khí hậu theo độ cao tạo điều
               kiện phát triển các loại hình du lịch như nghỉ dưỡng, tham quan…
               Các vùng núi cao có khí hậu mát mẻ quanh năm, không khí trong lành
@@ -1921,8 +2004,8 @@
               mùa vụ du lịch của hai miền. Các hoạt động du lịch biển ở miền Bắc
               hầu như chỉ diễn ra vào mùa hạ còn ở miền Nam có thể diễn ra quanh
               năm. <br />
-              - Các hiện tượng thời tiết như mưa lớn, bão,... là trở ngại đối với
-              hoạt động du lịch ngoài trời.
+              - Các hiện tượng thời tiết như mưa lớn, bão,... là trở ngại đối
+              với hoạt động du lịch ngoài trời.
             </p>
           </article>
           <article class="quality-card">
@@ -1934,20 +2017,20 @@
               vực sông
             </h3>
             <p class="quality-description">
-              Việc sử dụng tổng hợp tài nguyên nước trong một lưu vực sông là kết
-              hợp khai thác nước cho nhiều mục đích (thủy điện, tưới tiêu, giao
-              thông, nuôi trồng thủy sản, phòng chống lũ) và gắn với bảo vệ môi
-              trường. Chẳng hạn lưu vực sông Đà – sông Hồng: hồ Hòa Bình, Sơn La
-              được xây dựng vừa sản xuất thủy điện cung cấp điện cho lưới quốc
-              gia, vừa điều tiết lũ mùa mưa, cấp nước tưới cho đồng bằng sông
-              Hồng và tạo nguồn nước nuôi cá lồng, phát triển du lịch. Nếu chỉ
-              khai thác đơn lẻ một công dụng sẽ không hiệu quả và dễ gây tranh
-              chấp giữa các ngành. ở lưu vực sông Mekong, hệ thống đê bao và
-              kênh mương ở Đồng bằng sông Cừu Long được thiết kế để vừa tiêu
+              Việc sử dụng tổng hợp tài nguyên nước trong một lưu vực sông là
+              kết hợp khai thác nước cho nhiều mục đích (thủy điện, tưới tiêu,
+              giao thông, nuôi trồng thủy sản, phòng chống lũ) và gắn với bảo vệ
+              môi trường. Chẳng hạn lưu vực sông Đà – sông Hồng: hồ Hòa Bình,
+              Sơn La được xây dựng vừa sản xuất thủy điện cung cấp điện cho lưới
+              quốc gia, vừa điều tiết lũ mùa mưa, cấp nước tưới cho đồng bằng
+              sông Hồng và tạo nguồn nước nuôi cá lồng, phát triển du lịch. Nếu
+              chỉ khai thác đơn lẻ một công dụng sẽ không hiệu quả và dễ gây
+              tranh chấp giữa các ngành. ở lưu vực sông Mekong, hệ thống đê bao
+              và kênh mương ở Đồng bằng sông Cừu Long được thiết kế để vừa tiêu
               úng, rửa mặn, trữ nước ngọt cho mùa khô, vừa phục vụ giao thông
               thủy và khai thác thủy sản. Những ví dụ này cho thấy sử dụng tổng
-              hợp giúp khai thác hiệu quả nguồn nước, giảm thiệt hại do thiên tai
-              và bảo vệ môi trường.
+              hợp giúp khai thác hiệu quả nguồn nước, giảm thiệt hại do thiên
+              tai và bảo vệ môi trường.
             </p>
           </article>
         </div>
@@ -1981,21 +2064,23 @@
             <div class="about-text">
               <p>
                 <strong
-                  ><span style="color: red;"><h3>1. Đặc điểm tự nhiên vùng biển đảo</h3></span></strong
+                  ><span style="color: red"
+                    ><h3>1. Đặc điểm tự nhiên vùng biển đảo</h3></span
+                  ></strong
                 >
               </p>
               <p>
-                <strong><span style="color: red;">a) Địa hình</span></strong>
+                <strong><span style="color: red">a) Địa hình</span></strong>
               </p>
               <p>
                 <strong>- <em>Địa hình ven biển</em></strong> rất đa dạng, bao
-                gồm: các dạng bờ biển bồi tụ, bờ biển mài mòn, vịnh cửa sông, bãi
-                cát phẳng, đầm, phá, đảo ven bờ,...
+                gồm: các dạng bờ biển bồi tụ, bờ biển mài mòn, vịnh cửa sông,
+                bãi cát phẳng, đầm, phá, đảo ven bờ,...
               </p>
               <p>
                 - <strong><em>Địa hình thềm lục địa</em></strong> có sự tiếp nối
-                với địa hình trên đất liền. Vùng thềm lục địa rộng, bằng phẳng
-                ở phía bắc và phía nam, hẹp và sâu ở miền Trung.
+                với địa hình trên đất liền. Vùng thềm lục địa rộng, bằng phẳng ở
+                phía bắc và phía nam, hẹp và sâu ở miền Trung.
               </p>
               <p>
                 - <strong><em>Đáy biển</em></strong> có nhiều khối núi ngầm.
@@ -2012,15 +2097,15 @@
                 chủ yếu ở vùng biển Quảng Ninh, Hải Phòng, Khánh Hòa.
               </p>
               <p>
-                + Việt Nam có hai quần đảo xa bờ là: Hoàng Sa (thuộc thành phố Đà
-                Nẵng) và Trường Sa (thuộc tỉnh Khánh Hòa).
+                + Việt Nam có hai quần đảo xa bờ là: Hoàng Sa (thuộc thành phố
+                Đà Nẵng) và Trường Sa (thuộc tỉnh Khánh Hòa).
               </p>
               <p>
                 + Các đảo và quần đảo đóng vai trò quan trọng về kinh tế - chính
                 trị và an ninh quốc phòng.
               </p>
               <p>
-                <strong><span style="color: red;">b) Khí hậu</span></strong>
+                <strong><span style="color: red">b) Khí hậu</span></strong>
               </p>
               <p>
                 <strong>* Đặc điểm chung:</strong> Khí hậu vùng biển nước ta có
@@ -2028,30 +2113,34 @@
               </p>
               <p><strong>* Cụ thể:</strong></p>
               <p>
-                <strong><em>- Nhiệt độ</em></strong> không khí trung bình năm khá
-                cao, khoảng 26°C và có xu hướng tăng dần từ vùng biển phía bắc
-                xuống vùng biển phía nam.
+                <strong><em>- Nhiệt độ</em></strong> không khí trung bình năm
+                khá cao, khoảng 26°C và có xu hướng tăng dần từ vùng biển phía
+                bắc xuống vùng biển phía nam.
               </p>
               <p>
                 <strong><em>- Lượng mưa</em></strong
                 >: trung bình trên biển từ 1100 đến 1300 mm/năm, thấp hơn lượng
                 mưa trung bình trên đất liền.
               </p>
-              <p><strong><em>- Gió trên Biển:</em></strong></p>
+              <p>
+                <strong><em>- Gió trên Biển:</em></strong>
+              </p>
               <p>
                 + Từ tháng 10 đến tháng 4 năm sau: gió thổi theo hướng đông bắc
                 chiếm ưu thế; các tháng còn lại: ưu thế thuộc về gió thổi theo
                 hướng tây nam (riêng ở vịnh Bắc Bộ chủ yếu là hướng đông nam).
               </p>
               <p>
-                + Gió mạnh hơn trên đất liền. Tốc độ trung bình đạt 5 - 6 m/s
-                và cực đại tới 50 m/s.
+                + Gió mạnh hơn trên đất liền. Tốc độ trung bình đạt 5 - 6 m/s và
+                cực đại tới 50 m/s.
               </p>
               <p>
-                + Gió trên Biển Đông có vai trò quan trọng trong việc hình
-                thành dòng biển theo mùa và sóng trên biển.
+                + Gió trên Biển Đông có vai trò quan trọng trong việc hình thành
+                dòng biển theo mùa và sóng trên biển.
               </p>
-              <p><strong><em>- Bão trên Biển Đông:</em></strong></p>
+              <p>
+                <strong><em>- Bão trên Biển Đông:</em></strong>
+              </p>
               <p>
                 + Thường được hình thành ở vùng biển phía tây Thái Bình Dương
                 hoặc ngay trên Biển Đông.
@@ -2061,7 +2150,9 @@
                 trong đó có 3 - 4 cơn bão trực tiếp đổ bộ vào đất liền Việt Nam.
               </p>
               <p>
-                <strong><span style="color: red;">c) Đặc điểm hải văn</span></strong>
+                <strong
+                  ><span style="color: red">c) Đặc điểm hải văn</span></strong
+                >
               </p>
               <p>
                 <strong><em>- Dòng biển:</em></strong> Hoạt động của gió mùa đã
@@ -2077,7 +2168,9 @@
               </p>
               <p>
                 <strong
-                  ><em>- Hướng chảy và cường độ của dòng biển ven bờ:</em></strong
+                  ><em
+                    >- Hướng chảy và cường độ của dòng biển ven bờ:</em
+                  ></strong
                 >
                 thay đổi theo mùa:
               </p>
@@ -2087,7 +2180,8 @@
                 nam đông bắc.
               </p>
               <p>
-                + Về cường độ: dòng biển mùa đông chảy mạnh hơn dòng biển mùa hè.
+                + Về cường độ: dòng biển mùa đông chảy mạnh hơn dòng biển mùa
+                hè.
               </p>
               <p>
                 <strong><em>- Sóng biển:</em></strong> gió mùa cũng là nguyên
@@ -2117,23 +2211,29 @@
               </p>
               <p>
                 <strong
-                  ><span style="color: red;"><h3>2. Môi trường biển đảo Việt Nam</h3></span></strong
+                  ><span style="color: red"
+                    ><h3>2. Môi trường biển đảo Việt Nam</h3></span
+                  ></strong
                 >
               </p>
               <p>
                 <strong
-                  ><span style="color: red;">a) Đặc điểm môi trường biển đảo Việt Nam</span></strong
+                  ><span style="color: red"
+                    >a) Đặc điểm môi trường biển đảo Việt Nam</span
+                  ></strong
                 >
               </p>
               <p>
-                - Môi trường biển là một bộ phận quan trọng trong môi trường sống
-                của chúng ta. Môi trường biển ở nước ta bao gồm: các yếu tố tự
-                nhiên và các yếu tố vật chất nhân tạo.
+                - Môi trường biển là một bộ phận quan trọng trong môi trường
+                sống của chúng ta. Môi trường biển ở nước ta bao gồm: các yếu tố
+                tự nhiên và các yếu tố vật chất nhân tạo.
               </p>
-              <p><strong><em>- Môi trường nước biển:</em></strong></p>
               <p>
-                + Chất lượng nước biển ven bờ còn khá tốt với hầu hết các chỉ
-                số đặc trưng đều nằm trong giới hạn cho phép.
+                <strong><em>- Môi trường nước biển:</em></strong>
+              </p>
+              <p>
+                + Chất lượng nước biển ven bờ còn khá tốt với hầu hết các chỉ số
+                đặc trưng đều nằm trong giới hạn cho phép.
               </p>
               <p>
                 + Đối với môi trường nước xa bờ, chất lượng nước biển tương đối
@@ -2149,9 +2249,9 @@
                 hoá đa dạng.
               </p>
               <p>
-                + Các hệ sinh thái vùng bờ biển cũng rất phong phú, nhất là
-                rừng ngập mặn và hệ sinh thái vùng triều có tính đa dạng sinh
-                học cao.
+                + Các hệ sinh thái vùng bờ biển cũng rất phong phú, nhất là rừng
+                ngập mặn và hệ sinh thái vùng triều có tính đa dạng sinh học
+                cao.
               </p>
               <p>
                 <strong><em>- Môi trường các đảo, cụm đảo:</em></strong>
@@ -2167,7 +2267,10 @@
               <p>
                 <em
                   >-
-                  <strong>Môi trường biển đang có xu hướng suy giảm về chất lượng:</strong></em
+                  <strong
+                    >Môi trường biển đang có xu hướng suy giảm về chất
+                    lượng:</strong
+                  ></em
                 >
               </p>
               <p>
@@ -2175,9 +2278,9 @@
               </p>
               <p>
                 <em>+ Biểu hiện:</em> nhiều vùng cửa sông ven biển đã bị ô
-                nhiễm; vẫn còn tình trạng xả thải ra biển chưa qua xử lí; các
-                hệ sinh thái biển đang bị khai thác quá mức, thiếu tính bền
-                vững dẫn đến tình trạng suy giảm đa dạng sinh học,...
+                nhiễm; vẫn còn tình trạng xả thải ra biển chưa qua xử lí; các hệ
+                sinh thái biển đang bị khai thác quá mức, thiếu tính bền vững
+                dẫn đến tình trạng suy giảm đa dạng sinh học,...
               </p>
               <p>
                 =&gt; Bảo vệ và cải thiện môi trường biển chính là điều kiện cấp
@@ -2190,12 +2293,14 @@
                   alt=""
                 />
               </p>
-              <p style="text-align: center;">
+              <p style="text-align: center">
                 <em>Rác thải ở bãi biển Hồ Tràm (Bà Rịa – Vũng Tàu)</em>
               </p>
               <p>
                 <strong
-                  ><span style="color: red;">b) Vấn đề bảo vệ môi trường biển đảo Việt Nam</span></strong
+                  ><span style="color: red"
+                    >b) Vấn đề bảo vệ môi trường biển đảo Việt Nam</span
+                  ></strong
                 >
               </p>
               <p>- Các biện pháp bảo vệ môi trường biển đảo nước ta:</p>
@@ -2222,18 +2327,27 @@
                   alt=""
                 />
               </p>
-              <p style="text-align: center;">
+              <p style="text-align: center">
                 <em>Tranh cổ động về bảo vệ môi trường biển</em>
               </p>
               <p>
                 <strong
-                  ><span style="color: red;"><h3>3. Tài nguyên biển và thềm lục địa</h3></span></strong
+                  ><span style="color: red"
+                    ><h3>3. Tài nguyên biển và thềm lục địa</h3></span
+                  ></strong
                 >
               </p>
               <p>
-                <strong><span style="color: red;">a) Tài nguyên sinh vật</span></strong>
+                <strong
+                  ><span style="color: red"
+                    >a) Tài nguyên sinh vật</span
+                  ></strong
+                >
               </p>
-              <p>- Tài nguyên sinh vật vùng biển nước ta rất phong phú và đa dạng.</p>
+              <p>
+                - Tài nguyên sinh vật vùng biển nước ta rất phong phú và đa
+                dạng.
+              </p>
               <p>
                 + Về thực vật, nước ta có diện tích rừng ngập mặn đứng thứ hai
                 thế giới; đã phát hiện trên 600 loài rong biển, khoảng 400 loài
@@ -2248,19 +2362,25 @@
                 loài có giá trị khác.
               </p>
               <p>
-                <strong><span style="color: red;">b) Tài nguyên sinh vật</span></strong>
+                <strong
+                  ><span style="color: red"
+                    >b) Tài nguyên sinh vật</span
+                  ></strong
+                >
               </p>
               <p><strong>- Dầu mỏ và khí tự nhiên:</strong></p>
               <p>
                 + Vùng biển nước ta có nguồn tài nguyên dầu khí phong phú với
-                trữ lượng ước tính khoảng vài tỉ tấn dầu và hàng trăm tỉ m<sup>3</sup>
+                trữ lượng ước tính khoảng vài tỉ tấn dầu và hàng trăm tỉ m<sup
+                  >3</sup
+                >
                 khí. Hầu hết các diện tích chứa dầu đều nằm trên thềm lục địa
                 với độ sâu không lớn.
               </p>
               <p>
-                + Nước ta đã thăm dò ở vùng thềm lục địa có 8 bể trầm tích
-                gồm: Sông Hồng, Phú Khánh, Cửu Long, Nam Côn Sơn, Ma Lay - Thổ
-                Chu, Tư Chính - Vũng Mây, Hoàng Sa và nhóm bể Trường Sa, với diện
+                + Nước ta đã thăm dò ở vùng thềm lục địa có 8 bể trầm tích gồm:
+                Sông Hồng, Phú Khánh, Cửu Long, Nam Côn Sơn, Ma Lay - Thổ Chu,
+                Tư Chính - Vũng Mây, Hoàng Sa và nhóm bể Trường Sa, với diện
                 tích gần 1 triệu km<sup>2</sup>.
               </p>
               <p class="w3-center">
@@ -2270,7 +2390,7 @@
                   alt=""
                 />
               </p>
-              <p style="text-align: center;">
+              <p style="text-align: center">
                 <em>Khai thác dầu tạo mỏ Đại Hùng</em>
               </p>
               <p><strong>- Muối:</strong></p>
@@ -2286,14 +2406,14 @@
               <p><strong>- Một số tài nguyên khoáng sản khác:</strong></p>
               <p>
                 + Quặng titan có nhiều trong sa khoáng ven biển miền Trung với
-                trữ lượng dự báo khoảng 650 triệu tấn, tập trung nhiều ở khu
-                vực ven biển Ninh Thuận, Bình Thuận và Bà Rịa - Vũng Tàu.
+                trữ lượng dự báo khoảng 650 triệu tấn, tập trung nhiều ở khu vực
+                ven biển Ninh Thuận, Bình Thuận và Bà Rịa - Vũng Tàu.
               </p>
               <p>
-                <strong>+ </strong>Vùng ven biển nước ta còn có tiềm năng lớn
-                về cát thuỷ tinh. Cát thuỷ tinh phân bố ở nhiều nơi như vùng
-                Duyên hải Nam Trung Bộ, ven biển khu vực Quảng Bình - Quảng Trị
-                - Thừa Thiên Huế,
+                <strong>+ </strong>Vùng ven biển nước ta còn có tiềm năng lớn về
+                cát thuỷ tinh. Cát thuỷ tinh phân bố ở nhiều nơi như vùng Duyên
+                hải Nam Trung Bộ, ven biển khu vực Quảng Bình - Quảng Trị - Thừa
+                Thiên Huế,
               </p>
               <p>
                 + Ngoài ra, còn có phốt pho ở các quần đảo Hoàng Sa, Trường Sa;
@@ -2301,7 +2421,9 @@
                 lòng đất dưới đáy biển.
               </p>
               <p>
-                <strong><span style="color: red;">c) Tài nguyên du lịch</span></strong>
+                <strong
+                  ><span style="color: red">c) Tài nguyên du lịch</span></strong
+                >
               </p>
               <p>
                 - Dọc bờ biển nước ta có khoảng hơn 120 bãi biển, bãi cát phẳng,
@@ -2320,13 +2442,14 @@
                   alt=""
                 />
               </p>
-              <p style="text-align: center;">
+              <p style="text-align: center">
                 <em>Quang cảnh một phần vịnh Hạ Long (Quảng Ninh)</em>
               </p>
               <p>
                 <strong
-                  ><span style="color: red;"
-                    >d) Các tài nguyên khác ở vùng biển và thềm lục địa Việt Nam</span
+                  ><span style="color: red"
+                    >d) Các tài nguyên khác ở vùng biển và thềm lục địa Việt
+                    Nam</span
                   ></strong
                 >
               </p>
@@ -2356,7 +2479,7 @@
                   alt=""
                 />
               </p>
-              <p style="text-align: center;">
+              <p style="text-align: center">
                 <em>Cảng Chân Mây (Thừa Thiên Huế)</em>
               </p>
               <p class="w3-source">
@@ -2374,7 +2497,9 @@
     <section id="HINHANH" class="gallery-section">
       <div class="section-container">
         <header class="section-header" data-aos="fade-down">
-          <h2 class="section-title"><STROng>HÌNH ẢNH QUÂN ĐỘI VIỆT NAM</STROng></h2>
+          <h2 class="section-title">
+            <strong>HÌNH ẢNH QUÂN ĐỘI VIỆT NAM</strong>
+          </h2>
           <div class="section-divider"></div>
           <p class="section-subtitle">
             Những khoảnh khắc đẹp về Quân đội Nhân dân Việt Nam
@@ -2668,7 +2793,7 @@
               </p>
               <p>
                 <i class="fas fa-phone"></i>
-                <a href="tel:0866332946" style="text-decoration: none;"
+                <a href="tel:0866332946" style="text-decoration: none"
                   >0866332946</a
                 >
               </p>
@@ -2726,9 +2851,7 @@
       onValue(ref(db, "online"), function (snap) {
         var el = document.getElementById("vc-online");
         if (el)
-          el.textContent = snap.exists()
-            ? Object.keys(snap.val()).length
-            : 0;
+          el.textContent = snap.exists() ? Object.keys(snap.val()).length : 0;
       });
       var NS = "vietnam-muon-mau";
       var today = new Date().toISOString().slice(0, 10);
@@ -2743,7 +2866,7 @@
         fetch(base + (counted ? "get" : "hit") + "/" + NS + "-" + today).then(
           function (r) {
             return r.json();
-          }
+          },
         ),
       ])
         .then(function (res) {
@@ -2824,9 +2947,19 @@
           { sel: "#visitor-widget", aos: "zoom-in", delay: 0 },
           { sel: ".career-image-container", aos: "fade-right", delay: 0 },
           { sel: ".career-content", aos: "fade-left", delay: 100 },
-          { sel: ".quality-icon-container", aos: "zoom-in", delay: 0, stagger: 80 },
+          {
+            sel: ".quality-icon-container",
+            aos: "zoom-in",
+            delay: 0,
+            stagger: 80,
+          },
           { sel: ".quality-title", aos: "fade-up", delay: 50, stagger: 80 },
-          { sel: ".footer-content > div", aos: "fade-up", delay: 0, stagger: 100 },
+          {
+            sel: ".footer-content > div",
+            aos: "fade-up",
+            delay: 0,
+            stagger: 100,
+          },
         ];
         rules.forEach(function (rule) {
           document.querySelectorAll(rule.sel).forEach(function (el, i) {
@@ -2894,7 +3027,7 @@
               }, 16);
             });
           },
-          { threshold: 0.5 }
+          { threshold: 0.5 },
         );
         document.querySelectorAll("[data-counter]").forEach(function (el) {
           cObs.observe(el);
@@ -2908,7 +3041,7 @@
               }
             });
           },
-          { threshold: 0.3 }
+          { threshold: 0.3 },
         );
         document.querySelectorAll("mark").forEach(function (m) {
           mObs.observe(m);
@@ -2936,7 +3069,7 @@
               }
             });
           },
-          { threshold: 0.15 }
+          { threshold: 0.15 },
         );
         var table = document.querySelector(".mineral-table");
         if (table) tObs.observe(table);
@@ -2956,26 +3089,30 @@
         }, 4100);
       });
       window.addEventListener("load", function () {
-        document.querySelectorAll(".gallery-grid").forEach(function (container) {
-          container.querySelectorAll(".gallery-item").forEach(function (item) {
-            var img = item.querySelector("img");
-            var cap = item.querySelector(".gallery-caption");
-            if (img && !item.hasAttribute("data-src")) {
-              item.setAttribute("data-src", img.src);
-              item.setAttribute(
-                "data-sub-html",
-                cap ? "<p>" + cap.textContent + "</p>" : ""
-              );
+        document
+          .querySelectorAll(".gallery-grid")
+          .forEach(function (container) {
+            container
+              .querySelectorAll(".gallery-item")
+              .forEach(function (item) {
+                var img = item.querySelector("img");
+                var cap = item.querySelector(".gallery-caption");
+                if (img && !item.hasAttribute("data-src")) {
+                  item.setAttribute("data-src", img.src);
+                  item.setAttribute(
+                    "data-sub-html",
+                    cap ? "<p>" + cap.textContent + "</p>" : "",
+                  );
+                }
+              });
+            if (typeof lightGallery !== "undefined") {
+              lightGallery(container, {
+                selector: ".gallery-item",
+                plugins: [lgZoom],
+                speed: 400,
+              });
             }
           });
-          if (typeof lightGallery !== "undefined") {
-            lightGallery(container, {
-              selector: ".gallery-item",
-              plugins: [lgZoom],
-              speed: 400,
-            });
-          }
-        });
       });
       const menuLinks = document.querySelectorAll("#menu-list a");
       const menuToggle = document.getElementById("menu-toggle");
