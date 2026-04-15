@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://giabao23123.github.io/VietNam/sitemap.xml

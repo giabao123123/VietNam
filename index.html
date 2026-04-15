@@ -1,0 +1,3005 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tìm hiểu về Việt Nam – địa lý, khí hậu, khoáng sản, vùng biển đảo và hình ảnh quân đội Việt Nam."
+    />
+    <meta
+      name="keywords"
+      content="Việt Nam, địa lý Việt Nam, khí hậu Việt Nam, khoáng sản, biển đảo, quân đội Việt Nam, lịch sử Việt Nam"
+    />
+    <meta name="author" content="Gia Bảo" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Việt Nam Muôn Màu" />
+    <meta
+      property="og:description"
+      content="Khám phá Việt Nam qua địa lý, thiên nhiên, khí hậu và con người."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://giabao123123.github.io/VietNam/" />
+    <link rel="canonical" href="https://giabao123123.github.io/VietNam/" />
+    <title>VIỆT NAM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./android-chrome-192x192.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <link rel="shortcut icon" href="./chicki.GIF" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <style>
+      #btn-guide {
+        position: fixed;
+        bottom: 80px;
+        right: 24px;
+        z-index: 9998;
+        width: 46px;
+        height: 46px;
+        background: linear-gradient(135deg, #ffcd00, #e6b800);
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        color: #0a3d2e;
+        font-weight: 900;
+        transition: all 0.3s ease;
+      }
+      #btn-guide:hover {
+        transform: translateY(-4px);
+        background: linear-gradient(135deg, #ffe033, #ffcd00);
+      }
+      #guide-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 99999;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+      }
+      #guide-overlay.open {
+        display: flex;
+      }
+      #guide-modal {
+        background: #fff;
+        border-radius: 14px;
+        max-width: 560px;
+        width: 100%;
+        max-height: 85vh;
+        overflow-y: auto;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        animation: guideIn 0.3s ease;
+      }
+      @keyframes guideIn {
+        from {
+          transform: scale(0.88) translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1) translateY(0);
+          opacity: 1;
+        }
+      }
+      .gm-header {
+        background: linear-gradient(135deg, #0a3d2e, #1a5c3d);
+        color: #fff;
+        padding: 20px 24px 16px;
+        border-radius: 14px 14px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .gm-header h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffcd00;
+      }
+      .gm-header span {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 3px;
+        display: block;
+      }
+      #guide-close {
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #guide-close:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+      .gm-body {
+        padding: 20px 24px 24px;
+      }
+      .guide-step {
+        display: flex;
+        gap: 14px;
+        margin-bottom: 16px;
+        align-items: flex-start;
+      }
+      .guide-num {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(135deg, #0a3d2e, #1a5c3d);
+        color: #ffcd00;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .guide-text strong {
+        display: block;
+        font-size: 14px;
+        color: #0a3d2e;
+        margin-bottom: 3px;
+      }
+      .guide-text p {
+        margin: 0;
+        font-size: 13px;
+        color: #555;
+        line-height: 1.5;
+      }
+      .guide-divider {
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          #0a3d2e22,
+          #c8102e22,
+          #ffcd0022
+        );
+        margin: 14px 0;
+      }
+      .guide-tip {
+        background: #fffbe6;
+        border-left: 3px solid #ffcd00;
+        border-radius: 0 8px 8px 0;
+        padding: 10px 14px;
+        font-size: 13px;
+        color: #555;
+        margin-top: 16px;
+      }
+      .guide-tip strong {
+        color: #0a3d2e;
+      }
+      .nav-link.active {
+        color: #ffcd00 !important;
+        text-decoration: underline !important;
+        text-decoration-color: #ffcd00 !important;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+      }
+      .typed-cursor {
+        color: #ffcd00;
+        font-size: 1.2em;
+      }
+      .gallery-item {
+        cursor: zoom-in;
+      }
+      .quality-card,
+      .career-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+      }
+      .quality-card:hover {
+        transform: translateY(-8px) !important;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15) !important;
+      }
+      .mineral-table tbody tr {
+        transition: background 0.25s ease, transform 0.2s ease;
+        cursor: default;
+      }
+      .mineral-table tbody tr:hover {
+        background: rgba(10, 61, 46, 0.08) !important;
+        transform: scaleX(1.01);
+      }
+      mark {
+        background: linear-gradient(
+          120deg,
+          rgba(181, 180, 180, 0.747) 0%,
+          rgba(181, 180, 180, 0.747) 100%
+        );
+        background-size: 0% 100%;
+        background-repeat: no-repeat;
+        padding: 2px 4px;
+        border-radius: 3px;
+        transition: background-size 0.6s ease;
+      }
+      mark.mark-visible {
+        background-size: 100% 100%;
+      }
+      .hero-section {
+        background-attachment: fixed !important;
+      }
+      [data-aos] {
+        will-change: transform, opacity;
+      }
+      body {
+        overflow-x: clip !important;
+      }
+      section,
+      header,
+      footer {
+        overflow-x: clip !important;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      mark {
+        background-color: rgba(181, 180, 180, 0.747);
+        color: rgb(0, 0, 0);
+      }
+      hr {
+        height: 5px;
+        border: none;
+        position: relative;
+        background: linear-gradient(90deg, #0a3d2e, #c8102e, #ffcd00);
+      }
+      #backToTop {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        display: none;
+      }
+      #backToTop a {
+        width: 46px;
+        height: 46px;
+        background: linear-gradient(135deg, #8bc34a, #558b2f);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      #backToTop a:hover {
+        transform: translateY(-4px);
+        background: linear-gradient(135deg, #9ccc65, #689f38);
+      }
+      .arrow {
+        width: 10px;
+        height: 10px;
+        border-left: 3px solid #fff;
+        border-top: 3px solid #fff;
+        transform: rotate(45deg);
+      }
+      .arrow-1 {
+        animation: arrowUp 1.4s infinite;
+      }
+      .arrow-2 {
+        animation: arrowUp 1.4s infinite;
+        animation-delay: 0.2s;
+      }
+      @media (max-width: 600px) {
+        #backToTop a {
+          width: 42px;
+          height: 42px;
+        }
+      }
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      a {
+        text-decoration: underline;
+      }
+      .bu a {
+        text-decoration: none;
+      }
+      .menu-icon {
+        padding: 10px;
+        display: none;
+        font-size: 25px;
+        cursor: pointer;
+        user-select: none;
+        padding: 2px 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        width: fit-content;
+        margin-bottom: 5px;
+      }
+      .menu-icon {
+        position: fixed;
+        top: 14px;
+        right: 14px;
+        font-size: 26px;
+        padding: 12px 16px;
+        border-radius: 12px;
+        background: linear-gradient(145deg, #2e8b57, #1f6f4a) !important;
+        color: #ffffff;
+        cursor: pointer;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45),
+          inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .menu {
+        list-style: none;
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 300px;
+        height: 100vh;
+        padding-top: 70px;
+        background: linear-gradient(180deg, #0a3d2e, #1a5c3d) !important;
+        z-index: 1000;
+        transition: right 0.4s ease;
+      }
+      #menu-toggle:checked + .menu-icon {
+        transform: translateY(0) scale(0.96);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5),
+          inset 0 3px 6px rgba(0, 0, 0, 0.4);
+      }
+      .menu-icon:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55),
+          inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      }
+      .menu-scroll a {
+        transition: transform 0.25s ease;
+      }
+      .menu-scroll a:hover {
+        animation: pulse 1s infinite;
+      }
+      #menu-toggle:checked ~ .menu {
+        right: 0;
+      }
+      .menu a {
+        display: block;
+        padding: 12px 20px;
+        color: #ffffff;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 0.25s ease, background 0.25s, color 0.25s;
+      }
+      .menu a:hover {
+        background-color: rgba(255, 205, 0, 0.18);
+        color: #ffcd00;
+        transform: scale(1.06);
+      }
+      @media (max-width: 768px) {
+        .menu-icon {
+          display: inline-block;
+        }
+        .menu {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.4s ease;
+          margin-top: 0;
+          border: 1px solid #333;
+          width: 200px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          padding-left: 0;
+        }
+        #menu-toggle:checked + .menu-icon + .menu {
+          max-height: 1000px;
+          margin-top: 5px;
+        }
+        .menu li {
+          display: block;
+          border-bottom: 1px solid #ddd;
+        }
+      }
+      .mobile-menu {
+        position: relative;
+        z-index: 1000;
+      }
+      #menu-toggle {
+        display: none;
+      }
+      .menu-icon {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        font-size: 26px;
+        background: #0a3d2e;
+        color: #fff;
+        padding: 10px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      .menu-panel {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: linear-gradient(to bottom, #0a3d2e, #124f3b);
+        padding-top: 70px;
+        transition: 0.4s ease;
+      }
+      #menu-toggle:checked ~ .menu-panel {
+        left: 0;
+      }
+      .menu-panel ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu-panel li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .menu-panel a {
+        display: block;
+        padding: 14px 20px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .menu-panel a:hover {
+        background: rgba(255, 205, 0, 0.15);
+        color: #ffcd00;
+        padding-left: 26px;
+        transition: 0.3s;
+      }
+      #visitor-widget {
+        position: static;
+        display: block;
+        background: #0a3d2e;
+        border: 1px solid rgba(255, 205, 0, 0.35);
+        border-radius: 10px;
+        padding: 10px 16px;
+        width: fit-content;
+        min-width: 210px;
+        margin: 0 auto 24px auto;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      }
+      #visitor-widget:hover {
+        transform: translateY(-3px);
+      }
+      .vc-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #ffcd00;
+        font-family: 'Montserrat', sans-serif;
+        border-bottom: 1px solid rgba(255, 205, 0, 0.25);
+        padding-bottom: 6px;
+        margin-bottom: 8px;
+      }
+      .vc-row {
+        display: block;
+        margin-bottom: 6px;
+      }
+      .vc-label {
+        display: block;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 1px;
+      }
+      .vc-val {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .vc-loading {
+        opacity: 0.4;
+        animation: vcblink 1s infinite;
+      }
+      @keyframes vcblink {
+        0%,
+        100% {
+          opacity: 0.4;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+      @media (max-width: 600px) {
+        #visitor-widget {
+          bottom: 16px;
+          left: 16px;
+          min-width: 180px;
+          padding: 8px 12px;
+        }
+        .vc-val {
+          font-size: 13px;
+        }
+        .vc-label {
+          font-size: 10px;
+        }
+      }
+      figure {
+        margin: 0;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      id="btn-guide"
+      onclick="document.getElementById('guide-overlay').classList.add('open')"
+    >
+      ?
+    </button>
+    <div
+      id="guide-overlay"
+      onclick="if(event.target===this)this.classList.remove('open')"
+    >
+      <div id="guide-modal">
+        <div class="gm-header">
+          <h3>📖 Hướng dẫn sử dụng</h3>
+          <button
+            id="guide-close"
+            onclick="document.getElementById('guide-overlay').classList.remove('open')"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="gm-body">
+          <p><strong>⚙️ Hướng dẫn sử dụng</strong></p>
+          <p>
+            🧭 <strong>Điều hướng:</strong> Dùng menu trên cùng (PC) hoặc nút ☰
+            (điện thoại) để chuyển mục.
+          </p>
+          <p>
+            🖼️ <strong>Xem ảnh:</strong> Nhấp vào ảnh để phóng to, nhấn Esc để
+            đóng.
+          </p>
+          <p>
+            📊 <strong>Thống kê:</strong> Widget hiển thị số người đang truy cập
+            và tổng lượt xem.
+          </p>
+          <p>
+            ⬆️ <strong>Lên đầu trang:</strong> Nhấn nút mũi tên xanh góc phải
+            khi cuộn xuống.
+          </p>
+          <p>
+            ⭐ <strong>Chuyển sang trang học tập:</strong> Nhấn vào ngôi sao góc
+            trái.
+          </p>
+          <hr
+            style="border: none; border-top: 2px solid #eee; margin: 14px 0;"
+          />
+          <p><strong>📚 Nội dung các mục</strong></p>
+          <p>
+            🏳️ <strong>Sơ lược về Việt Nam:</strong> Giới thiệu vị trí địa lý,
+            diện tích, đường biên giới và hình dạng chữ S của lãnh thổ.
+          </p>
+          <p>
+            🗺️ <strong>Địa lý:</strong> Thông tin về tọa độ, các vùng tiếp
+            giáp và đặc điểm tổng quan lãnh thổ Việt Nam.
+          </p>
+          <p>
+            ⛰️ <strong>Địa hình:</strong> Mô tả các dạng địa hình chính gồm
+            đồng bằng, trung du, miền núi và cao nguyên.
+          </p>
+          <p>
+            💎 <strong>Khoáng sản:</strong> Bảng thống kê các loại khoáng sản
+            phân bố theo vùng trên cả nước.
+          </p>
+          <p>
+            🌤️ <strong>Tính chất khí hậu:</strong> Đặc điểm khí hậu nhiệt đới
+            gió mùa, sự phân hóa theo vùng miền.
+          </p>
+          <p>
+            🌊 <strong>Thủy văn:</strong> Hệ thống sông ngòi, ao hồ và mạng
+            lưới thủy văn trên lãnh thổ.
+          </p>
+          <p>
+            💧 <strong>Vai trò khí hậu & tài nguyên nước:</strong> Tầm quan
+            trọng của khí hậu và nguồn nước đối với đời sống, sản xuất.
+          </p>
+          <p>
+            🏝️ <strong>Vùng biển đảo:</strong> Giới thiệu Biển Đông, các quần
+            đảo Hoàng Sa, Trường Sa và vùng đặc quyền kinh tế.
+          </p>
+          <p>
+            🎖️ <strong>Hình ảnh quân đội:</strong> Thư viện ảnh về lực lượng vũ
+            trang nhân dân Việt Nam.
+          </p>
+          <p class="guide-tip">
+            💡 <strong>Mẹo:</strong> Nhấn tên mục trên thanh menu để chuyển đến
+            phần đó ngay lập tức.
+          </p>
+        </div>
+      </div>
+    </div>
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+    <header class="main-header buu">
+      <div class="header-container">
+        <div class="logo-section">
+          <a href="https://giabao123123.github.io/hoctap/">
+            <span class="logo-icon">
+              <i class="fa-solid fa-star footer-logo-icon star-sharp"></i> </span
+          ></a>
+          <h1 class="logo-text">VIỆT NAM MUÔN MÀU</h1>
+        </div>
+        <div class="w3-hide-large">
+          <input type="checkbox" id="menu-toggle" hidden />
+          <label for="menu-toggle" class="menu-icon">☰</label>
+          <ul class="menu w3-right w3-button w3-hide-large" id="menu-list">
+            <li><a href="#about" class="nav-link">Sơ lược về Việt Nam</a></li>
+            <li><a href="#DIALY" class="nav-link">Địa lý</a></li>
+            <li><a href="#DIAHINH" class="nav-link">Địa hình</a></li>
+            <li><a href="#KHOANGSAN" class="nav-link">Khoáng sản</a></li>
+            <li><a href="#TINHCHATAM" class="nav-link">Tính chất khí hậu</a></li>
+            <li><a href="#THUYVAN" class="nav-link">Thủy văn</a></li>
+            <li>
+              <a href="#KHIHAU" class="nav-link"
+                >Vai trò của khí hậu và tài nguyên nước</a
+              >
+            </li>
+            <li><a href="#BIENDAO" class="nav-link">Vùng biển đảo</a></li>
+            <li>
+              <a href="#HINHANH" class="nav-link">Hình ảnh quân đội Viêt Nam</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="main-nav w3-hide-small w3-hide-medium">
+          <ul class="nav-list">
+            <li class="nav-item bi">
+              <a href="#about" class="nav-link" style="text-decoration: none;"
+                >Sơ lược về Việt Nam</a
+              >
+            </li>
+            <li class="nav-item bi">
+              <a href="#DIALY" class="nav-link" style="text-decoration: none;"
+                >Địa lý</a
+              >
+            </li>
+            <li class="nav-item bi">
+              <a href="#DIAHINH" class="nav-link" style="text-decoration: none;"
+                >Địa hình</a
+              >
+            </li>
+            <li class="nav-item bi">
+              <a
+                href="#KHOANGSAN"
+                class="nav-link"
+                style="text-decoration: none;"
+                >Khoáng sản</a
+              >
+            </li>
+            <li class="nav-item bi">
+              <a
+                href="#TINHCHATAM"
+                class="nav-link"
+                style="text-decoration: none;"
+                >Tính chất khí hậu</a
+              >
+            </li>
+            <li class="nav-item bi">
+              <a href="#THUYVAN" class="nav-link" style="text-decoration: none;"
+                >Thủy văn</a
+              >
+            </li>
+            <li class="nav-item bi">
+              <a href="#KHIHAU" class="nav-link" style="text-decoration: none;"
+                >Vai trò của khí hậu và tài nguyên nước</a
+              >
+            </li>
+            <li class="nav-item bi">
+              <a href="#BIENDAO" class="nav-link" style="text-decoration: none;"
+                >Vùng biển đảo</a
+              >
+            </li>
+            <li class="nav-item bi">
+              <a href="#HINHANH" class="nav-link" style="text-decoration: none;"
+                >Hình ảnh quân đội Viêt Nam</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h2 class="hero-title" id="typed-title"></h2>
+          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Từ truyền thống đến hiện đại, Việt Nam tỏa sáng bằng bản sắc, lòng
+            yêu nước và khát vọng vươn lên.
+          </p>
+          <div class="hero-divider" data-aos="zoom-in" data-aos-delay="400"></div>
+          <p class="hero-quote" data-aos="fade-up" data-aos-delay="500">
+            Dù khác biệt sắc màu, chúng ta chung một niềm tin, một cội nguồn và
+            một tương lai Việt&nbsp;Nam.
+          </p>
+          <a
+            href="#about"
+            class="hero-cta-button bi"
+            style="text-decoration: none;"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            >Tìm Hiểu Thêm</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <header class="section-header" data-aos="fade-down">
+          <h2 class="section-title"><strong>Sơ lược về Việt Nam</strong></h2>
+          <div class="section-divider"></div>
+          <aside id="visitor-widget">
+            <div class="vc-title">Thống kê truy cập</div>
+            <div class="vc-row">
+              <span class="vc-label">Đang truy cập:</span>
+              <span class="vc-val" id="vc-online">...</span>
+            </div>
+            <div class="vc-row">
+              <span class="vc-label">Hôm nay:</span>
+              <span class="vc-val vc-loading" id="vc-today">—</span>
+            </div>
+            <div class="vc-row">
+              <span class="vc-label">Tổng lượt truy cập:</span>
+              <span class="vc-val vc-loading" id="vc-total">—</span>
+            </div>
+          </aside>
+        </header>
+        <div class="w3-content">
+          <div class="about-details">
+            <div class="about-text">
+              <p>
+                <strong><h3 class="section-title">Vị trí địa lý</h3></strong>
+              </p>
+
+              <p>
+                <mark><strong>Vị trí địa lý và phạm vi lãnh thổ Việt Nam</strong></mark
+                ><br />
+                Việt Nam là một quốc gia nằm ở rìa phía đông bán đảo Đông Dương,
+                gần trung tâm khu vực Đông Nam Á. Tổng diện tích đất liền của Việt
+                Nam là <u>331.212 km²</u>. Biên giới Việt Nam trên đất liền dài
+                <u>4.639 km</u>, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc
+                Bộ và Biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và
+                Campuchia ở phía tây. Hình dáng Việt Nam trên bản đồ có dạng hình
+                chữ S, khoảng cách từ bắc tới nam (theo đường chim bay) là
+                <u>1.650 km</u> và vị trí hẹp nhất theo chiều đông – tây nằm ở
+                Đồng Hới (Quảng Trị) với chưa đầy <u>50 km</u>. Đường bờ biển dài
+                <u>3.260 km</u> (không kể các đảo). Ngoài vùng nội thủy, Việt Nam
+                tuyên bố <u>12 hải lý</u> lãnh hải, thêm <u>12 hải lý</u> vùng
+                tiếp giáp lãnh hải, <u>200 hải lý</u> vùng đặc quyền kinh tế và
+                thềm lục địa. Vùng biển thuộc chủ quyền, quyền chủ quyền và quyền
+                tài phán của Việt Nam có diện tích khoảng <u>1.000.000 km²</u> trên
+                Biển Đông.
+              </p>
+              <p class="w3-source">
+                Nguồn:
+                <a
+                  href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Ba_l%C3%BD_Vi%E1%BB%87t_Nam"
+                  target="_blank"
+                  >wikipedia - Địa Lý Việt Nam</a
+                >
+              </p>
+              <img
+                src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/6/12/1522524/Ban-Do-34-Tinh-2.jpg"
+                alt=""
+                class="gallery-image"
+              />
+              <p class="w3-source">
+                Nguồn hình ảnh:
+                <a
+                  href="https://laodong.vn/thoi-su/ban-do-34-tinh-thanh-moi-cua-viet-nam-vua-duoc-quoc-hoi-thong-qua-1522524.ldo"
+                  target="_blank"
+                  >laodong.vn</a
+                >
+              </p>
+              <hr />
+              <p>
+                <strong><h3 class="section-title">Hành chính</h3></strong>
+              </p>
+              <p>
+                Phân cấp hành chính Việt Nam, Tỉnh (Việt Nam), và Danh sách các
+                đơn vị hành chính tại Việt Nam
+              </p>
+              <p class="desktop-text w3-center">
+                <strong>Việt Nam được chia thành ba miền chính:</strong>
+              </p>
+              <p class="mobile-text">
+                <strong>-----Việt Nam được chia thành ba miền chính:-----</strong>
+              </p>
+              <div class="w3-third w3-container w3-margin-bottom">
+                <a
+                  href="https://giabao123123.github.io/mienvietnam/#miennam"
+                  target="_blank"
+                >
+                  <div class="w3-container w3-white w3-center bu">
+                    <p><b><u>Miền Nam</u></b></p>
+                  </div>
+                </a>
+              </div>
+              <div class="w3-third w3-container w3-margin-bottom">
+                <a
+                  href="https://giabao123123.github.io/mienvietnam/#mientrung"
+                  target="_blank"
+                >
+                  <div class="w3-container w3-white w3-center bu">
+                    <p><b><u>Miền Trung</u></b></p>
+                  </div>
+                </a>
+              </div>
+              <div class="w3-third w3-container w3-margin-bottom">
+                <a
+                  href="https://giabao123123.github.io/mienvietnam/#mienbac"
+                  target="_blank"
+                >
+                  <div class="w3-container w3-white w3-center bu">
+                    <p><b><u>Miền Bắc</u></b></p>
+                  </div>
+                </a>
+              </div>
+              <p>
+                <mark><strong>Phân cấp hành chính Việt Nam</strong></mark><br />
+                Phân cấp hành chính Việt Nam gồm <u>2</u> cấp: cấp tỉnh và tương
+                đương, cấp xã và tương đương. Dưới cấp tỉnh và tương đương là các
+                đơn vị hành chính phường, xã, đặc khu, được gọi chung là cấp xã.
+              </p>
+
+              <p>
+                <mark><strong>Đơn vị hành chính cơ sở</strong></mark><br />
+                Dưới cấp phường, xã là các khu vực không chính thức với tên gọi
+                khác nhau như khu phố, tổ dân phố, làng, thôn, ấp, khóm, buôn,
+                bản, xóm.
+              </p>
+
+              <p>
+                <mark><strong>Số lượng đơn vị hành chính</strong></mark><br />
+                Tính đến năm <u>2025</u>, Việt Nam có tổng cộng <u>34</u> đơn vị
+                hành chính cấp tỉnh và tương đương, bao gồm <u>28</u> tỉnh và
+                <u>6</u> thành phố trực thuộc trung ương.
+              </p>
+              <hr />
+              <p>
+                <strong><h3 class="section-title">Chính Trị</h3></strong>
+              </p>
+              <p>
+                <mark><strong>Chế độ chính trị Việt Nam</strong></mark><br />
+                Việt Nam theo chế độ xã hội chủ nghĩa với cơ chế có duy nhất một
+                đảng chính trị lãnh đạo là Đảng Cộng sản Việt Nam. Vào năm
+                <u>2016</u>, các đại biểu là Đảng viên trong Quốc hội chiếm tỉ lệ
+                <u>95,8%</u>, những người đứng đầu Chính phủ, các Bộ và Quốc hội
+                cũng như các cơ quan tư pháp đều là Đảng viên và do Ban Chấp
+                hành Trung ương hoặc Bộ Chính trị đề cử.
+              </p>
+
+              <p>
+                <mark><strong>Đảng Cộng sản Việt Nam</strong></mark><br />
+                Đảng Cộng sản Việt Nam được Điều <u>4</u> Hiến pháp quy định là
+                Đảng cầm quyền, là tổ chức chính trị duy nhất lãnh đạo Nhà nước
+                và xã hội, cam kết thực hiện nguyên tắc Lênin về “tập trung dân
+                chủ” và không cho phép đa đảng.
+              </p>
+
+              <p>
+                <mark><strong>Tổ chức của Đảng</strong></mark><br />
+                Đại hội Đảng toàn quốc (nhiệm kỳ <u>5</u> năm một lần) là cơ quan
+                quyền lực cao nhất. Đại hội bầu ra Ban Chấp hành Trung ương Đảng
+                – cơ quan quyền lực cao nhất giữa hai kỳ Đại hội. Ban Chấp hành
+                Trung ương bầu ra Bộ Chính trị, Ban Bí thư, Ủy ban Kiểm tra
+                Trung ương và chức danh Tổng Bí thư – người đứng đầu hệ thống
+                chính trị Việt Nam.
+              </p>
+
+              <p>
+                <mark><strong>Quốc hội Việt Nam</strong></mark><br />
+                Quốc hội có nhiệm kỳ <u>5</u> năm, đứng đầu là Chủ tịch Quốc hội,
+                là cơ quan đại biểu cao nhất của nhân dân. Quốc hội có quyền lập
+                hiến, lập pháp, giám sát và quyết định các chính sách cơ bản của
+                Nhà nước. Sau Đổi mới, vai trò của Quốc hội ngày càng được nâng
+                cao.
+              </p>
+
+              <p>
+                <mark><strong>Chủ tịch nước</strong></mark><br />
+                Chủ tịch nước là nguyên thủ quốc gia, có quyền công bố hiến pháp,
+                luật; là Tổng Tư lệnh lực lượng vũ trang; đề nghị Quốc hội bầu
+                hoặc miễn nhiệm các chức danh quan trọng và đại diện Nhà nước
+                trong đối nội, đối ngoại.
+              </p>
+
+              <p>
+                <mark><strong>Chính phủ</strong></mark><br />
+                Chính phủ là cơ quan chấp hành của Quốc hội và là cơ quan hành
+                chính cao nhất, gồm Thủ tướng, các Phó Thủ tướng, các Bộ trưởng
+                và Thủ trưởng cơ quan ngang Bộ.
+              </p>
+
+              <p>
+                <mark><strong>Lãnh đạo chủ chốt</strong></mark><br />
+                Năm chức danh: Tổng Bí thư, Chủ tịch nước, Thủ tướng, Chủ tịch
+                Quốc hội và Thường trực Ban Bí thư được xem là các lãnh đạo chủ
+                chốt của Đảng và Nhà nước Việt Nam.
+              </p>
+
+              <p>
+                <mark><strong>Hệ thống tư pháp</strong></mark><br />
+                Tòa án nhân dân tối cao là cơ quan xét xử cao nhất. Bên cạnh đó,
+                Tòa án quân sự có thẩm quyền đặc biệt trong các vấn đề liên quan
+                đến an ninh quốc gia. Viện kiểm sát nhân dân tối cao là cơ quan
+                giữ quyền công tố và kiểm sát hoạt động tư pháp cao nhất.
+              </p>
+            </div>
+            <h3 class="section-title w3-center">
+              Lãnh đạo chủ chốt của Đảng và Nhà nước Việt Nam
+            </h3>
+            <div class="gallery-grid" id="gallery-landao" data-aos="fade-up">
+              <div>
+                <figure class="gallery-item">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/T%C3%B4_L%C3%A2m_in_Hanoi_-_2024_%28P064238-935063%29.jpg/250px-T%C3%B4_L%C3%A2m_in_Hanoi_-_2024_%28P064238-935063%29.jpg"
+                    alt="Tổng Bí thư, Chủ tịch nước Tô Lâm"
+                    class="gallery-image"
+                  />
+                  <figcaption class="gallery-overlay">
+                    <p class="gallery-caption">
+                      Tổng Bí thư, Chủ tịch nước Tô Lâm
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure class="gallery-item">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/L%C3%AA_Minh_H%C6%B0ng_2026.jpg/250px-L%C3%AA_Minh_H%C6%B0ng_2026.jpg"
+                    alt="Thủ tướng Chính phủ Lê Minh Hưng"
+                    class="gallery-image"
+                  />
+                  <figcaption class="gallery-overlay">
+                    <p class="gallery-caption">
+                      Thủ tướng Chính phủ Lê Minh Hưng
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <figure class="gallery-item">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/vi/thumb/0/04/Tran_Thanh_Man_29092025.jpg/250px-Tran_Thanh_Man_29092025.jpg"
+                  alt="Chủ tịch Quốc hội Trần Thanh Mẫn"
+                  class="gallery-image"
+                />
+                <div>
+                  <figcaption class="gallery-overlay">
+                    <p class="gallery-caption">
+                      Chủ tịch Quốc hội Trần Thanh Mẫn
+                    </p>
+                  </figcaption>
+                </div>
+              </figure>
+              <div>
+                <figure class="gallery-item">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Tr%E1%BA%A7n_c%E1%BA%A9m_t%C3%BA.jpg/250px-Tr%E1%BA%A7n_c%E1%BA%A9m_t%C3%BA.jpg"
+                    alt="Thường trực Ban Bí thư Trần Cẩm Tú"
+                    class="gallery-image"
+                  />
+
+                  <figcaption class="gallery-overlay">
+                    <p class="gallery-caption">
+                      Thường trực Ban Bí thư Trần Cẩm Tú
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <p class="w3-source">
+              Nguồn thông tin và hình ảnh:
+              <a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam" target="_blank"
+                >wikipedia - Việt Nam</a
+              >
+            </p>
+            <hr />
+            <div class="section-container">
+              <p>
+                <strong><h3 class="section-title">Khí Hậu</h3></strong>
+              </p>
+              <div class="w3-content">
+                <div class="about-details">
+                  <div class="about-text">
+                    <p>
+                      <mark><strong>Khí hậu Việt Nam</strong></mark><br />
+                      Việt Nam có khí hậu nhiệt đới gió mùa, thời tiết có sự biến
+                      động rõ rệt. Phía bắc dãy Bạch Mã có hai mùa gió chính: gió
+                      mùa Đông Bắc lạnh và khô vào mùa đông, tạo nên mùa đông
+                      lạnh; gió Tây Nam nóng khô và gió Đông Nam ẩm ướt vào mùa
+                      hè. Phía nam chịu ảnh hưởng của gió Đông Bắc vào mùa khô và
+                      gió Tây Nam vào mùa mưa. Các dòng biển góp phần điều hòa khí
+                      hậu. Độ ẩm tương đối trung bình khoảng <u>84%</u> quanh
+                      năm. Việt Nam thường xuyên chịu tác động của lũ lụt và
+                      bão, với lượng mưa từ <u>1.200</u> đến <u>3.000 mm</u>, số
+                      giờ nắng khoảng <u>1.500</u> đến <u>3.000 giờ/năm</u> và
+                      nhiệt độ dao động từ <u>5&nbsp;°C</u> đến <u>37&nbsp;°C</u>.
+                      Nhiệt độ trung bình năm đã tăng khoảng <u>0,5&nbsp;°C</u>
+                      trong vòng <u>50 năm</u> (1964–2014).
+                    </p>
+
+                    <p>
+                      Dọc theo lãnh thổ kéo dài, khí hậu Việt Nam được chia thành
+                      ba vùng: miền Bắc mang tính chất cận nhiệt đới ẩm, miền
+                      Trung có đặc điểm khí hậu nhiệt đới gió mùa, còn miền Nam
+                      thuộc vùng khí hậu nhiệt đới xavan. Độ ẩm tương đối trung
+                      bình trên cả nước dao động từ <u>84%</u> đến <u>100%</u>. Do
+                      sự khác biệt về vĩ độ và địa hình, khí hậu giữa các vùng có
+                      sự phân hóa rõ rệt.
+                    </p>
+
+                    <p>
+                      Mùa đông hoặc mùa khô thường kéo dài từ tháng <u>11</u> đến
+                      tháng <u>4</u> năm sau, khi gió mùa Đông Bắc thổi dọc theo bờ
+                      biển Trung Quốc qua vịnh Bắc Bộ, mang theo nhiều hơi ẩm. Mùa
+                      hè, từ tháng <u>5</u> đến tháng <u>10</u>, gió mùa Tây Nam
+                      hoạt động mạnh, không khí nóng kết hợp với hơi ẩm từ biển
+                      gây mưa lớn trên diện rộng.
+                    </p>
+
+                    <p>
+                      Lượng mưa trung bình năm ở các vùng dao động từ <u>120</u>
+                      đến <u>300 cm</u>, trong đó gần <u>90%</u> lượng mưa tập trung
+                      vào mùa hè. Nhiệt độ trung bình năm ở đồng bằng thường cao
+                      hơn vùng núi và cao nguyên. Nhiệt độ thấp nhất khoảng
+                      <u>5&nbsp;°C</u> vào tháng <u>12–1</u>, trong khi nhiệt độ cao
+                      nhất có thể vượt <u>37&nbsp;°C</u> vào tháng <u>7</u>. Ở miền
+                      Nam, nhiệt độ quanh năm ít biến động, phổ biến trong khoảng
+                      <u>21–28&nbsp;°C</u>.
+                    </p>
+                    <p class="w3-source">
+                      Nguồn thông tin và hình ảnh:
+                      <a
+                        href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam"
+                        target="_blank"
+                        >wikipedia - Việt Nam</a
+                      >,
+                      <a
+                        href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Ba_l%C3%BD_Vi%E1%BB%87t_Nam"
+                        target="_blank"
+                        >wikipedia - Địa Lý Việt Nam</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="section-container">
+              <p>
+                <strong><h3 class="section-title">Sinh Thái</h3></strong>
+              </p>
+              <div class="w3-content">
+                <div class="about-details">
+                  <div class="about-text">
+                    <p>
+                      <mark><strong>Đa dạng sinh học Việt Nam</strong></mark><br />
+                      Việt Nam nằm trong vùng sinh thái Indomalaya. Theo Báo cáo
+                      tình trạng môi trường quốc gia năm <u>2005</u>, Việt Nam là
+                      một trong <u>25</u> quốc gia có mức độ đa dạng sinh học cao
+                      trên thế giới, xếp thứ <u>16</u> toàn cầu và là nơi sinh
+                      sống của khoảng <u>16%</u> tổng số loài sinh vật trên Trái
+                      Đất. Cả nước đã ghi nhận <u>15.986</u> loài thực vật, trong
+                      đó khoảng <u>10%</u> là loài đặc hữu. Hệ động vật rất phong
+                      phú với <u>307</u> loài giun tròn, <u>200</u> loài oligochaeta,
+                      <u>145</u> loài acarina, <u>113</u> loài bọ đuôi bật,
+                      <u>7.750</u> loài côn trùng, <u>260</u> loài bò sát,
+                      <u>120</u> loài lưỡng cư, <u>840</u> loài chim và <u>310</u>
+                      loài thú, trong đó có <u>100</u> loài chim và <u>78</u> loài
+                      thú là loài đặc hữu.
+                    </p>
+
+                    <p>
+                      Ngoài ra, Việt Nam còn có <u>1.438</u> loài tảo nước ngọt,
+                      chiếm <u>9,6%</u> tổng số loài tảo, cùng với <u>794</u> loài
+                      thủy sinh không xương sống và <u>2.458</u> loài cá biển. Vào
+                      cuối những năm <u>1980</u>, một quần thể tê giác Java được
+                      phát hiện tại Vườn quốc gia Cát Tiên; tuy nhiên, cá thể cuối
+                      cùng của loài này tại Việt Nam được cho là đã chết vào năm
+                      <u>2010</u>.
+                    </p>
+
+                    <p>
+                      Ngân hàng gen quốc gia Việt Nam hiện đang bảo tồn
+                      <u>12.300</u> giống thuộc <u>115</u> loài. Trong năm
+                      <u>2004</u>, Chính phủ Việt Nam đã chi khoảng
+                      <u>497 triệu</u> đô la Mỹ cho công tác bảo tồn đa dạng sinh
+                      học và thiết lập <u>126</u> khu bảo tồn, trong đó có <u>28</u>
+                      vườn quốc gia. Việt Nam có <u>2</u> di sản thiên nhiên thế
+                      giới là Vịnh Hạ Long và Vườn quốc gia Phong Nha – Kẻ Bàng,
+                      cùng <u>6</u> khu dự trữ sinh quyển gồm Cần Giờ, Cát Tiên,
+                      Cát Bà, Kiên Giang, Đồng bằng sông Hồng và Tây Nghệ An.
+                    </p>
+                    <p>
+                      Việt Nam đã giữ gìn và bảo tồn một số vườn quốc gia đa dạng
+                      sinh học quý hiếm như Vườn quốc gia Hoàng Liên Sơn (khu
+                      vực núi Phan-xi-păng, Lào Cai), Vườn quốc gia Cát Bà (Quảng
+                      Ninh), vườn quốc gia Cúc Phương (Ninh Bình), vườn quốc gia
+                      Pù-mát (Quảng Bình), vườn quốc gia Phong Nha-Kẻ Bàng
+                      (Quảng Bình), vườn quốc gia Bạch Mã (Thừa Thiên Huế), vườn
+                      quốc gia Côn Đảo (đảo Côn Sơn, Bà Rịa-Vũng Tàu), vườn
+                      quốc gia Cát Tiên (Đồng Nai)… Các vườn quốc gia này là nơi
+                      cho các nhà sinh học Việt Nam và thế giới nhiên cứu khoa
+                      học, đồng thời là những nơi du lịch sinh thái hấp dẫn.
+                      Ngoài ra, UNESCO đã công nhận 9 khu dự trữ sinh quyển ở
+                      Việt Nam là khu dự trữ sinh quyển thế giới như: Khu dự trữ
+                      sinh quyển rừng ngập mặn Cần Giờ, Khu dự trữ sinh quyển
+                      Đồng Nai, Khu dự trữ sinh quyển Cát Bà, Khu dự trữ sinh
+                      quyển châu thổ sông Hồng, Khu dự trữ sinh quyển ven biển
+                      và biển đảo Kiên Giang, Khu dự trữ sinh quyển miền tây
+                      Nghệ An, Khu dự trữ sinh quyển Mũi Cà Mau và Khu dự trữ
+                      sinh quyển Cù Lao Chàm; Khu dự trữ sinh quyển Langbiang.
+                    </p>
+                    <p class="w3-source">
+                      Nguồn thông tin và hình ảnh:
+                      <a
+                        href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam"
+                        target="_blank"
+                        >wikipedia - Việt Nam</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="DIALY" class="about-section bu">
+      <hr class="w3-content" />
+      <div class="section-container">
+        <header class="section-header">
+          <h2 class="section-title"><strong>ĐẶC ĐIỂM ĐỊA LÝ</strong></h2>
+          <div class="section-divider"></div>
+        </header>
+        <div class="w3-content">
+          <div class="about-details">
+            <div class="about-text">
+              <p>
+                <mark><strong>Vị trí địa lý và lãnh thổ</strong></mark><br />
+                Việt Nam có diện tích <u>331.212 km²</u>, đường biên giới trên
+                đất liền dài <u>4.639 km</u>, đường bờ biển trải dài
+                <u>3.260 km</u>, có chung đường biên giới trên biển với Thái Lan
+                qua vịnh Thái Lan và với Trung Quốc, Philippines, Indonesia,
+                Brunei, Malaysia qua Biển Đông. Việt Nam tuyên bố chủ quyền đối
+                với hai thực thể địa lí tranh chấp trên Biển Đông là các quần
+                đảo Hoàng Sa (bị mất kiểm soát trên thực tế) và Trường Sa (kiểm
+                soát một phần).
+              </p>
+
+              <p>
+                <mark><strong>Hình dạng lãnh thổ</strong></mark><br />
+                Khoảng cách giữa cực Bắc và cực Nam của Việt Nam theo đường chim
+                bay là <u>1.650 km</u>. Nơi có chiều ngang hẹp nhất ở Quảng Bình
+                với chưa đầy <u>50 km</u>. Đường biên giới đất liền dài hơn
+                <u>4.600 km</u>, trong đó biên giới với Lào dài nhất (gần
+                <u>2.100 km</u>), tiếp đến là Trung Quốc và Campuchia. Tổng diện
+                tích <u>331.212 km²</u> gồm toàn bộ phần đất liền và hải đảo cùng
+                hơn <u>4.000</u> hòn đảo, bãi đá ngầm và hai quần đảo Trường Sa
+                (thuộc tỉnh Khánh Hòa) và Hoàng Sa (thuộc thành phố Đà Nẵng) mà
+                Nhà nước tuyên bố chủ quyền.
+              </p>
+              <p class="w3-source">
+                Nguồn thông tin:
+                <a
+                  href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam"
+                  target="_blank"
+                  style="text-decoration: underline;"
+                  >wikipedia - Việt Nam</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="DIAHINH" class="about-section">
+      <hr class="w3-content" />
+      <div class="section-container">
+        <header class="section-header" data-aos="fade-down">
+          <h2 class="section-title"><strong>ĐẶC ĐIỂM ĐỊA HÌNH</strong></h2>
+          <div class="section-divider"></div>
+        </header>
+        <div class="w3-content">
+          <div class="about-details">
+            <div class="about-text">
+              <p>
+                <mark><strong>Đặc điểm địa hình Việt Nam</strong></mark><br />
+                Việt Nam là một quốc gia nhiệt đới với địa hình phần lớn là đồi
+                núi, chiếm khoảng <u>3/4</u> diện tích lãnh thổ, chủ yếu là đồi
+                núi thấp; trong khi đó đồng bằng chỉ chiếm khoảng <u>1/4</u> diện
+                tích. Trên phạm vi cả nước, địa hình đồng bằng và đồi núi thấp
+                (dưới <u>1.000 m</u>) chiếm tới <u>85%</u> diện tích, còn địa hình
+                núi cao (trên <u>2.000 m</u>) chỉ chiếm khoảng <u>1%</u>. Cấu
+                trúc địa hình đa dạng do tác động của vận động Tân kiến tạo làm
+                trẻ lại, tạo nên sự phân bậc rõ rệt và có xu hướng thấp dần từ
+                tây bắc xuống đông nam. Diện tích đất có khả năng sử dụng cho
+                nông nghiệp chiếm chưa tới <u>20%</u>. Lãnh thổ Việt Nam được chia
+                thành các khu vực địa hình lớn gồm miền núi và đồng bằng sông
+                Hồng ở phía Bắc; dãy Trường Sơn, Tây Nguyên, đồng bằng duyên hải
+                miền Trung; và đồng bằng sông Cửu Long ở phía Nam.
+              </p>
+              <p>
+                Có các dãy núi và cao nguyên như dãy Hoàng Liên Sơn, cao nguyên
+                Sơn La ở phía Bắc, dãy Bạch Mã và các cao nguyên theo dãy Trường
+                Sơn ở phía Nam. Mạng lưới sông, hồ phân bố ở vùng đồng bằng châu
+                thổ, miền núi phía Bắc và Tây Nguyên.
+              </p>
+              <p class="w3-source">
+                Nguồn thông tin:
+                <a
+                  href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87t_Nam"
+                  target="_blank"
+                  >wikipedia - Việt Nam</a
+                >,
+                <a
+                  href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Ba_l%C3%BD_Vi%E1%BB%87t_Nam"
+                  target="_blank"
+                  >wikipedia - Địa Lý Việt Nam</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="KHOANGSAN" class="career-section">
+      <hr class="w3-content" />
+      <div class="section-container">
+        <header class="section-header" data-aos="fade-down">
+          <h2 class="section-title"><strong>KHOÁNG SẢN</strong></h2>
+          <div class="section-divider"></div>
+        </header>
+        <div class="w3-content">
+          <div class="about-details">
+            <div class="about-text">
+              <p>
+                <mark><strong>Tài nguyên khoáng sản Việt Nam</strong></mark> phân
+                bố rộng khắp từ Bắc đến Nam, với hơn <u>5.000 mỏ và điểm quặng</u>
+                thuộc trên <u>60 loại khoáng sản</u> khác nhau. Nhiều loại có
+                trữ lượng lớn, đóng vai trò quan trọng trong phát triển kinh tế –
+                xã hội, đặc biệt trong giai đoạn công nghiệp hóa – hiện đại hóa.
+              </p>
+
+              <p>
+                <mark><strong>Các khoáng sản chủ yếu</strong></mark> gồm:
+              </p>
+
+              <ul>
+                <li>Bô xít: <u>672,1 triệu tấn</u></li>
+                <li>Apatit: <u>0,778 triệu tấn</u></li>
+                <li>Titan: <u>15,71 triệu tấn</u></li>
+                <li>Than: <u>3.520 triệu tấn</u></li>
+                <li>Đất hiếm: <u>1,1 triệu tấn</u></li>
+                <li>Đá granit: khoảng <u>15 tỷ m³</u></li>
+              </ul>
+
+              <p>
+                Trữ lượng <strong>dầu mỏ</strong> của Việt Nam ước khoảng
+                <u>6 tỷ tấn</u> và <strong>khí đốt</strong> khoảng
+                <u>4.000 tỷ m³</u>, phân bố chủ yếu tại các bể trầm tích từ Nam ra
+                Bắc.
+              </p>
+
+              <p>
+                <mark><strong>Đóng góp của ngành khai khoáng</strong></mark>: Năm
+                <u>2012</u>, Việt Nam đứng <u>thứ 7</u> về khai thác dầu thô tại
+                khu vực châu Á – Thái Bình Dương (khoảng <u>110 triệu thùng</u>).
+                Giai đoạn <u>2008–2013</u>, đóng góp của ngành khai khoáng vào
+                GDP tăng từ <u>9,07%</u> lên <u>11,49%</u>, tương đương
+                <u>411.673 tỷ đồng</u>.
+              </p>
+
+              <p>
+                <mark><strong>Một số khoáng sản quan trọng khác</strong></mark>:
+              </p>
+
+              <ul>
+                <li>
+                  Quặng sắt: trữ lượng khoảng <u>1,3 tỷ tấn</u>, nhu cầu năm 2025
+                  khoảng <u>32 triệu tấn</u>
+                </li>
+                <li>
+                  Titan: khoảng <u>650 triệu tấn</u>, có thể khai thác
+                  <u>440 triệu tấn</u>
+                </li>
+                <li>Vàng: khoảng <u>154 tấn</u> (thăm dò <u>42,7 tấn</u>)</li>
+                <li>Wonfram: <u>195 nghìn tấn</u>; Antimon: <u>67 nghìn tấn</u></li>
+                <li>Đồng: khoảng <u>1 triệu tấn</u></li>
+                <li>
+                  Niken: khoảng <u>4,5 triệu tấn</u>, chủ yếu tại mỏ Bản Phúc
+                  (Sơn La)
+                </li>
+              </ul>
+
+              <p>
+                Từ năm <u>2013</u>, Việt Nam giảm mạnh xuất khẩu than do nhu cầu
+                trong nước tăng. Điều này cho thấy
+                <strong>tài nguyên không phải là vô tận</strong>, và mô hình phát
+                triển dựa chủ yếu vào khai thác tài nguyên
+                <strong>không bền vững</strong>.
+              </p>
+
+              <div class="table-container">
+                <table class="mineral-table">
+                  <thead>
+                    <tr>
+                      <th>Loại khoáng sản</th>
+                      <th>Mỏ khoáng sản tiêu biểu</th>
+                      <th>Nơi phân bố</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Than đá</td>
+                      <td>Cẩm Phả, Hạ Long, Sơn Dương, Quỳnh Nhai, Nông Sơn</td>
+                      <td>Quảng Ninh, Tuyên Quang, Sơn La, Quảng Ngãi</td>
+                    </tr>
+                    <tr>
+                      <td>Dầu mỏ</td>
+                      <td>Rồng, Bạch Hổ, Rạng Đông, Hồng Ngọc</td>
+                      <td>Thềm lục địa phía Nam</td>
+                    </tr>
+                    <tr>
+                      <td>Khí tự nhiên</td>
+                      <td>Tiền Hải</td>
+                      <td>Hưng Yên</td>
+                    </tr>
+                    <tr>
+                      <td>Bô-xit</td>
+                      <td>Đắk Nông, Di Linh, Tùng Bá</td>
+                      <td>Tây Nguyên, Lâm Đồng, Tuyên Quang</td>
+                    </tr>
+                    <tr>
+                      <td>Sắt</td>
+                      <td>Trấn Yên, Trại Cau</td>
+                      <td>Lào Cai, Thái Nguyên</td>
+                    </tr>
+                    <tr>
+                      <td>A-pa-tit</td>
+                      <td>Lào Cai</td>
+                      <td>Lào Cai</td>
+                    </tr>
+                    <tr>
+                      <td>Đá vôi xi măng</td>
+                      <td>Lạng Sơn, Thanh Hóa, Kỳ Anh</td>
+                      <td>Lạng Sơn, Thanh Hóa, Nghệ An</td>
+                    </tr>
+                    <tr>
+                      <td>Titan</td>
+                      <td>Phú Vang</td>
+                      <td>Thành phố Huế</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="w3-source">
+                Nguồn thông tin:
+                <a
+                  href="https://vi.wikipedia.org/wiki/T%C3%A0i_nguy%C3%AAn_thi%C3%AAn_nhi%C3%AAn_c%E1%BB%A7a_Vi%E1%BB%87t_Nam "
+                  target="_blank"
+                  >wikipedia - Tài nguyên thiên nhiên Việt Nam</a
+                >,
+                <a
+                  href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Ba_l%C3%BD_Vi%E1%BB%87t_Nam"
+                  target="_blank"
+                  >wikipedia - Địa Lý Việt Nam</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="TINHCHATAM" class="timeline-section">
+      <hr class="w3-content" />
+      <div class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">
+            <strong>ĐẶC ĐIỂM TÍNH CHẤT KHÍ HẬU</strong>
+          </h2>
+          <div class="section-divider"></div>
+        </header>
+        <div class="section-container">
+          <div class="w3-content">
+            <div class="about-details">
+              <div class="about-text">
+                <p>
+                  <mark><strong>1. Đặc điểm khí hậu Việt Nam</strong></mark><br />
+                  Nằm ở bán cầu Bắc trong vòng đai khí hậu nhiệt đới, Việt Nam
+                  có khí hậu nhiệt đới ẩm gió mùa với những đặc trưng tiêu biểu
+                  của kiểu khí hậu này.
+                </p>
+
+                <p>
+                  <mark><strong>1.1. Tính chất nhiệt đới</strong></mark><br />
+                  Việt Nam hằng năm nhận được lượng bức xạ lớn từ Mặt Trời, tạo
+                  nên nền nhiệt cao, đặc biệt ở khu vực phía Nam – nơi gần xích
+                  đạo.
+                </p>
+
+                <p>
+                  Nhiệt độ trung bình năm của cả nước dao động từ <u>22 – 27°C</u>,
+                  phù hợp với tiêu chuẩn khí hậu nhiệt đới, thậm chí có nơi vượt
+                  ngưỡng này.
+                </p>
+
+                <p>
+                  Tổng số giờ nắng trung bình khoảng <u>3.000 giờ/năm</u>, tuy có
+                  sự khác nhau giữa các vùng do đặc điểm địa hình.
+                </p>
+
+                <p>
+                  <mark><strong>1.2. Tính chất ẩm</strong></mark><br />
+                  Lượng mưa trung bình năm của Việt Nam khá lớn, phổ biến từ
+                  <u>1.400 – 2.400 mm</u>, trong đó khoảng <u>80 – 90%</u> tập
+                  trung vào mùa mưa.
+                </p>
+
+                <p>
+                  Độ ẩm không khí trung bình cao, khoảng <u>80%</u>, kết hợp với
+                  mưa nhiều gây nên hiện tượng nồm ẩm phổ biến.
+                </p>
+
+                <p>
+                  <mark><strong>1.3. Tính chất gió mùa</strong></mark><br />
+                  Khí hậu Việt Nam chịu tác động của nhiều loại gió, trong đó
+                  gió mùa giữ vai trò chủ đạo.
+                </p>
+
+                <ul>
+                  <li>
+                    Gió mùa là loại gió thổi theo mùa do sự chênh lệch nhiệt độ
+                    và khí áp.
+                  </li>
+                  <li>Gồm gió mùa mùa đông và gió mùa mùa hạ.</li>
+                </ul>
+
+                <p>
+                  <strong>- Gió mùa mùa đông:</strong> Hoạt động từ
+                  <u>tháng 11 đến tháng 4 năm sau</u>, chủ yếu ảnh hưởng đến Bắc
+                  Bộ và Bắc Trung Bộ, gây thời tiết lạnh và khô, cuối mùa chuyển
+                  sang lạnh ẩm.
+                </p>
+
+                <p>
+                  Phía Nam không chịu ảnh hưởng rõ rệt của gió mùa Đông Bắc do
+                  bị dãy Bạch Mã chắn. Từ Đà Nẵng trở vào chịu tác động của gió
+                  tín phong bán cầu Bắc, gây mưa ven biển Trung Bộ và tạo mùa
+                  khô ở Tây Nguyên, Nam Bộ.
+                </p>
+
+                <p>
+                  <strong>- Gió mùa mùa hạ:</strong> Chủ yếu là gió mùa Tây Nam,
+                  hoạt động mạnh vào mùa hè, gây mưa lớn trên phạm vi cả nước,
+                  kèm theo hiện tượng gió phơn ở một số khu vực.
+                </p>
+
+                <p>
+                  <mark><strong>2. Sự phân hóa sâu sắc của khí hậu Việt Nam</strong></mark
+                  ><br />
+                  Mặc dù nằm hoàn toàn trong vùng nhiệt đới, khí hậu Việt Nam
+                  phân hóa rõ rệt thành các miền khác nhau.
+                </p>
+
+                <ul>
+                  <li>
+                    <strong>Miền Bắc:</strong> Khí hậu cận nhiệt đới ẩm, có
+                    <u>2 mùa</u> rõ rệt là mùa đông và mùa hạ. Mùa đông kéo dài
+                    từ <u>tháng 11 đến tháng 3</u>, chịu ảnh hưởng của không khí
+                    lạnh từ Xibia.
+                  </li>
+                  <li>
+                    <strong>Miền Bắc Trung Bộ, Trung và Nam Trung Bộ:</strong>
+                    Khí hậu nhiệt đới gió mùa, chịu tác động của gió mậu dịch.
+                    Nhiệt độ cao quanh năm, mùa khô kéo dài và sâu sắc.
+                  </li>
+                  <li>
+                    <strong>Miền Nam:</strong> Khí hậu nhiệt đới điển hình với
+                    <u>2 mùa</u> rõ rệt là mùa mưa và mùa khô. Mùa mưa bắt đầu từ
+                    cuối <u>tháng 4 – đầu tháng 5</u> và kéo dài đến
+                    <u>tháng 10</u>.
+                  </li>
+                </ul>
+                <p>
+                  <mark><strong>Khí hậu nước ta phân hoá theo chiều Bắc – Nam:</strong></mark>
+                  Miền khí hậu phía Bắc (từ dãy Bạch Mã trở ra) có nhiệt độ trung
+                  bình năm trên <u>20°C</u>, mùa đông lạnh (đầu mùa đông khô, cuối
+                  mùa đông ẩm), mùa hạ nóng ẩm và mưa nhiều. Miền khí hậu phía Nam
+                  (từ dãy Bạch Mã trở vào) có nhiệt độ trung bình năm trên
+                  <u>25°C</u>, không có tháng nào dưới <u>20°C</u>, biên độ nhiệt
+                  trung bình năm nhỏ hơn <u>9°C</u> và phân hoá rõ rệt thành mùa
+                  mưa – mùa khô.
+                </p>
+
+                <p>
+                  <mark><strong>Khí hậu phân hoá theo chiều Đông – Tây:</strong></mark>
+                  Giữa vùng biển và đất liền, giữa đồng bằng ven biển phía đông
+                  và vùng đồi núi phía tây có sự khác biệt rõ rệt. Vùng biển và
+                  thềm lục địa có khí hậu ôn hoà hơn đất liền; đồng bằng ven biển
+                  mang tính nhiệt đới ẩm gió mùa; vùng đồi núi phía tây có khí
+                  hậu phân hoá phức tạp do tác động của gió mùa và hướng các dãy
+                  núi.
+                </p>
+
+                <p>
+                  <mark><strong>Khí hậu phân hoá theo độ cao:</strong></mark> Ở đai
+                  thấp (miền Bắc đến <u>600 – 700 m</u>, miền Nam đến
+                  <u>900 – 1.000 m</u>) là khí hậu nhiệt đới gió mùa, mùa hạ nóng
+                  với nhiệt độ trên <u>25°C</u>. Lên cao hơn (dưới <u>2.600 m</u>)
+                  là khí hậu cận nhiệt đới gió mùa trên núi, nhiệt độ trung bình
+                  các tháng dưới <u>25°C</u>. Từ <u>2.600 m</u> trở lên là khí hậu
+                  ôn đới gió mùa trên núi, các tháng có nhiệt độ trung bình dưới
+                  <u>15°C</u>.
+                </p>
+
+                <p>
+                  <mark><strong>Khí hậu phân hoá theo mùa:</strong></mark> Mùa hạ
+                  chịu ảnh hưởng của gió mùa Tây Nam, mùa đông chịu tác động của
+                  gió mùa Đông Bắc.
+                </p>
+
+                <p>Khí hậu Việt Nam còn phân hóa theo không gian:</p>
+
+                <ul>
+                  <li>Từ Bắc vào Nam</li>
+                  <li>Từ Tây sang Đông</li>
+                  <li>Từ thấp lên cao</li>
+                </ul>
+
+                <p>
+                  Ở vùng núi cao, khí hậu phân hóa theo đai cao, tiêu biểu tại
+                  Tây Bắc với <u>3 đai khí hậu</u>: nhiệt đới, cận nhiệt và ôn đới
+                  núi cao.
+                </p>
+
+                <p>
+                  Ngoài ra, khí hậu Việt Nam còn mang tính thất thường, biểu hiện
+                  qua các năm rét sớm – rét muộn, mưa nhiều – khô hạn, bão nhiều
+                  – bão ít.
+                </p>
+
+                <p>
+                  Mưa lớn thường do bão và áp thấp nhiệt đới gây ra, tập trung
+                  nhiều ở duyên hải Bắc Bộ và Trung Bộ.
+                </p>
+                <p class="w3-source">
+                  Nguồn thông tin:
+                  <a
+                    href="https://vietjack.com/dia-li-8-kn/cau-hoi-2-trang-117-dia-li-lop-8.jsp"
+                    target="_blank"
+                    >vietjack.com</a
+                  >,
+                  <a
+                    href="https://luatminhkhue.vn/dac-diem-khi-hau-viet-nam.aspx"
+                    target="_blank"
+                    >luatminhkhue.vn</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="THUYVAN" class="career-section">
+      <hr class="w3-content" />
+      <div class="section-container">
+        <header class="section-header">
+          <h2 class="section-title"><strong>ĐẶC ĐIỂM THỦY VĂN</strong></h2>
+          <div class="section-divider"></div>
+        </header>
+        <div class="section-container">
+          <div class="w3-content">
+            <div class="about-details">
+              <div class="about-text">
+                <p>
+                  <mark><b>1. Đặc điểm sông ngòi</b></mark>
+                </p>
+
+                <p>
+                  <mark>a) Mạng lưới sông ngòi dày đặc, phân bố rộng khắp cả nước</mark><br />
+                  - Nước ta có <u>2360 con sông</u> dài trên 10 km.<br />
+                  - Mật độ trung bình mạng lưới sông khoảng
+                  <u>0,66 km/km²</u>, ở đồng bằng có thể cao hơn, từ
+                  <u>2 – 4 km/km²</u>.<br />
+                  - Dọc bờ biển nước ta, cứ khoảng <u>20 km</u> lại có một cửa
+                  sông.
+                </p>
+
+                <p>
+                  <mark>b) Lưu lượng nước lớn, giàu phù sa</mark><br />
+                  - Sông ngòi nước ta có
+                  <u>tổng lượng nước lớn (khoảng 839 tỉ m³/năm)</u>, phân bố không
+                  đều giữa các hệ thống sông. Trong đó, hệ thống sông Mê Công
+                  chiếm tới <u>60,4%</u> lưu lượng cả nước.<br />
+                  - Sông ngòi mang theo lượng phù sa rất lớn, khoảng
+                  <u>200 triệu tấn/năm</u>, riêng sông Hồng đạt
+                  <u>120 triệu tấn/năm</u>, chiếm <u>60%</u> tổng lượng phù sa cả
+                  nước.
+                </p>
+
+                <p>
+                  <mark>c) Phần lớn sông ngòi chảy theo hai hướng chính</mark><br />
+                  - Chủ yếu theo hướng <u>tây bắc – đông nam</u> (sông Hồng, sông
+                  Mã, sông Tiền…) và hướng <u>vòng cung</u> (sông Lô, sông Gâm,
+                  sông Cầu…).<br />
+                  - Một số sông chảy theo hướng khác như
+                  <u>đông nam – tây bắc</u> (sông Kỳ Cùng), <u>đông – tây</u>
+                  (sông Srêpôk, sông Sê San…).<br />
+                  - Hầu hết các sông đều đổ ra Biển Đông.
+                </p>
+
+                <p>
+                  <mark>d) Chế độ dòng chảy theo hai mùa rõ rệt</mark><br />
+                  + Chế độ dòng chảy phụ thuộc chặt chẽ vào chế độ mưa, gồm mùa lũ
+                  (mùa mưa) và mùa cạn (mùa khô).<br />
+                  + Nguyên nhân chính là do nguồn cung cấp nước sông chủ yếu từ
+                  nước mưa.
+                </p>
+
+                <p>
+                  <mark><b>2. Một số hệ thống sông lớn ở nước ta</b></mark><br />
+                  Việt Nam có <u>9 hệ thống sông lớn</u> với diện tích lưu vực
+                  trên <u>10.000 km²</u>. Các hệ thống sông có đặc điểm mạng
+                  lưới và chế độ nước khác nhau, tiêu biểu như hệ thống sông Hồng,
+                  sông Thu Bồn và sông Cửu Long.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="career-cards">
+          <article class="career-card">
+            <div>
+              <div class="career-image-container">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRERgNjooH269U-Lja0_KLgtVsPxsxgVW9qjg&s"
+                  alt="Hệ thống sông hồng"
+                  class="career-image"
+                />
+                <div class="career-image-overlay"></div>
+              </div>
+              <p class="w3-source w3-center w3-container">
+                Nguồn hình ảnh:
+                <a
+                  href="https://vov.vn/xa-hoi/nhung-diem-moi-trong-quy-dinh-ve-phong-chong-lu-he-thong-song-hong-song-thai-binh-post1016395.vov"
+                  target="_blank"
+                  >vov.vn</a
+                >
+              </p>
+            </div>
+            <div class="career-content">
+              <h3 class="career-title"><STRong>Hệ thống sông Hồng</STRong></h3>
+              <p class="career-description">
+                <b>* Đặc điểm mạng lưới sông:</b><br />
+                - Là hệ thống sông lớn thứ <u>2</u> cả nước, sau hệ thống sông
+                Mê Công.<br />
+                - Có hơn <u>600 phụ lưu</u>, trong đó hai phụ lưu lớn là sông Đà
+                và sông Lô. Các phụ lưu hợp với dòng chính tạo thành mạng lưới
+                hình nan quạt, hội tụ tại Việt Trì (Phú Thọ).<br />
+                - Sông Hồng đổ ra vịnh Bắc Bộ qua cửa chính Ba Lạt và nhiều chi
+                lưu khác.
+              </p>
+              <p class="career-description">
+                <b>* Đặc điểm chế độ nước sông:</b><br />
+                - Có hai mùa rõ rệt: mùa lũ và mùa cạn.<br />
+                + Mùa lũ: từ tháng <u>6</u> đến tháng <u>10</u>, chiếm khoảng
+                <u>75%</u> tổng lượng nước năm.<br />
+                + Mùa cạn: từ tháng <u>11</u> đến tháng <u>5</u> năm sau, chỉ
+                chiếm khoảng <u>25%</u>.<br />
+                - Do mạng lưới dạng nan quạt, khi mưa lớn nước tập trung nhanh,
+                dễ gây lũ lụt.<br />
+                - Các công trình thủy lợi, thủy điện giúp điều hòa chế độ nước
+                sông.
+              </p>
+              <p class="w3-source">
+                Nguồn thông tin:
+                <a
+                  href="https://vietjack.com/dia-li-8-kn/ly-thuyet-bai-6-thuy-van-viet-nam.jsp"
+                  target="_blank"
+                  >vietjack.com</a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="career-card reverse-layout">
+            <div>
+              <div class="career-image-container">
+                <img
+                  src="https://seho.vn/tintuc/wp-content/uploads/2022/08/song-thu-bon.jpg"
+                  alt="Hệ thống sông Thu Bồn"
+                  class="career-image"
+                />
+                <div class="career-image-overlay"></div>
+              </div>
+              <p class="w3-source w3-center w3-container">
+                Nguồn hình ảnh:
+                <a href="https://seho.vn/tintuc/song-thu-bon/" target="_blank"
+                  >seho.vn</a
+                >
+              </p>
+            </div>
+            <div class="career-content">
+              <h3 class="career-title"><strong>Hệ thống sông Thu Bồn</strong></h3>
+              <p class="career-description">
+                <b>* Đặc điểm mạng lưới sông:</b><br />
+                - Sông Thu Bồn dài <u>205 km</u>, bắt nguồn từ vùng núi Trường
+                Sơn Nam.<br />
+                - Hệ thống sông có khoảng <u>80 phụ lưu</u>.<br />
+                - Các sông, suối trong hệ thống thường ngắn và dốc, chia thành
+                nhiều lưu vực nhỏ độc lập.<br />
+                - Mạng lưới sông có dạng <u>nan quạt</u>.
+              </p>
+              <p class="career-description">
+                <b>* Đặc điểm chế độ nước sông:</b><br />
+                Chế độ nước chia thành hai mùa rõ rệt là mùa lũ và mùa cạn.<br />
+                - Mùa lũ diễn ra từ tháng <u>9</u> đến tháng <u>12</u>, trùng
+                với mùa mưa thu – đông và mùa bão. Lượng nước mùa lũ chiếm
+                khoảng <u>65%</u> tổng lượng nước năm; lũ lên nhanh và đột ngột,
+                đặc biệt khi có bão và mưa lớn.<br />
+                - Mùa cạn kéo dài từ tháng <u>1</u> đến tháng <u>9</u>, chiếm
+                khoảng <u>35%</u> tổng lượng nước cả năm.
+              </p>
+              <p class="w3-source">
+                Nguồn thông tin:
+                <a
+                  href="https://vietjack.com/dia-li-8-kn/ly-thuyet-bai-6-thuy-van-viet-nam.jsp"
+                  target="_blank"
+                  >vietjack.com</a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="career-card">
+            <div>
+              <div class="career-image-container">
+                <img
+                  src="https://bcp.cdnchinhphu.vn/Uploaded_VGP/nguyenductuan/20100201/DBSCL.jpg"
+                  alt="Hệ thống sông Cửu Long"
+                  class="career-image"
+                />
+                <div class="career-image-overlay"></div>
+              </div>
+              <p class="w3-source w3-center w3-container">
+                Nguồn hình ảnh:
+                <a
+                  href="https://baochinhphu.vn/nhieu-co-hoi-tao-dien-mao-moi-cho-dong-bang-song-cuu-long-10231021.htm"
+                  target="_blank"
+                  >baochinhphu.vn</a
+                >
+              </p>
+            </div>
+            <div class="career-content">
+              <h3 class="career-title"><strong>Hệ thống Sông Cửu Long</strong></h3>
+              <p class="career-description">
+                <b>* Đặc điểm mạng lưới sông:</b><br />
+                - Sông Cửu Long (sông Mê Công) có chiều dài dòng chính khoảng
+                <u>4.300 km</u>, bắt nguồn từ cao nguyên Tây Tạng (Trung Quốc).<br />
+                - Đây là một trong những hệ thống sông lớn trên thế giới, chảy
+                qua <u>6 quốc gia</u>. Trong phần lưu vực thuộc lãnh thổ Việt Nam,
+                sông có chiều dài hơn <u>230 km</u>.<br />
+                - Hệ thống sông có nhiều phụ lưu; riêng tại Việt Nam có
+                <u>286 phụ lưu</u>, trong đó lớn nhất là sông <u>Srê Pốk</u>.<br />
+                - Hai chi lưu lớn ở Việt Nam là sông <u>Tiền</u> và sông
+                <u>Hậu</u>, chia thành nhiều sông nhỏ cùng hệ thống kênh rạch
+                chằng chịt.<br />
+                - Mạng lưới sông có dạng <u>lông chim</u>.
+              </p>
+              <p class="career-description">
+                <b>* Đặc điểm chế độ nước sông:</b><br />
+                Chế độ nước chia thành hai mùa rõ rệt là mùa lũ và mùa cạn.<br />
+                - Mùa lũ kéo dài từ tháng <u>7</u> đến tháng <u>11</u>, lượng
+                nước mùa lũ chiếm hơn <u>75%</u> tổng lượng nước cả năm. Trong
+                mùa lũ, mực nước lên và xuống chậm do mạng lưới sông dạng lông
+                chim và được điều tiết bởi hồ <u>Tôn-lê Sáp</u> (Campuchia).<br />
+                - Mùa cạn từ tháng <u>12</u> đến tháng <u>6</u> năm sau, lượng
+                nước chỉ chiếm khoảng <u>25%</u> tổng lượng nước năm.
+              </p>
+              <p class="w3-source">
+                Nguồn thông tin:
+                <a
+                  href="https://vietjack.com/dia-li-8-kn/ly-thuyet-bai-6-thuy-van-viet-nam.jsp"
+                  target="_blank"
+                  >vietjack.com</a
+                >
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="KHIHAU" class="qualities-section">
+      <hr class="w3-content" />
+      <div class="section-container">
+        <header class="section-header">
+          <h2 class="section-title">
+            <STRong>VAI TRÒ CỦA KHÍ HẬU VÀ TÀI NGUYÊN NƯỚC</STRong>
+          </h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle"></p>
+        </header>
+        <div class="qualities-grid">
+          <article class="quality-card">
+            <div class="quality-icon-container">
+              <i class="fas fa-fist-raised quality-icon"></i>
+            </div>
+            <h3 class="quality-title">Đối với sản xuất nông nghiệp.</h3>
+            <p class="quality-description">
+              Nước ta có khí hậu nhiệt đới ẩm gió mùa. Nguồn nhiệt ẩm phong phú
+              làm cho cây cối xanh tươi quanh năm, sinh trưởng nhanh, có thể
+              trồng từ hai đến ba vụ lúa và rau, màu trong một năm; cơ cấu cây
+              trồng, vật nuôi đa dạng.
+            </p>
+            <br />
+            <p class="quality-description">
+              Khí hậu nước ta có sự phân hoá rõ rệt theo chiều bắc - nam, theo
+              mùa và theo độ cao. Vì vậy, ở nước ta có thể trồng được từ các
+              loại cây nhiệt đời cho đến một số cây cận nhiệt và ôn đới. Cơ cấu
+              mùa vụ và cơ cấu cây trồng cũng rất đa dạng, phong phú và có sự
+              khác nhau giữa các vùng.
+            </p>
+            <br />
+            <p class="quality-description">
+              + Nhiều thiên tai thường xuyên xảy ra (bão, lũ lụt, hạn hán, gió
+              Tây khô nóng, sương muối,...) gây thiệt hại cho sản xuất nông
+              nghiệp. <br />
+              + Khí hậu nóng ẩm tạo điều kiện cho sâu bệnh, dịch bệnh, nấm mốc
+              phát triển gây hại cho cây trồng, vật nuôi.
+            </p>
+          </article>
+          <article class="quality-card">
+            <div class="quality-icon-container">
+              <i class="fas fa-balance-scale quality-icon"></i>
+            </div>
+            <h3 class="quality-title">Đối với sự phát triển du lịch</h3>
+            <p class="quality-description">
+              - Khí hậu nhiệt đới ẩm gió mùa, có sự phân hóa theo mùa và theo
+              đai cao ở nước ta đã tác động trực tiếp đến sự hình thành các
+              điểm du lịch, loại hình du lịch, mùa vụ du lịch… <br />
+              + Ở các khu vực đồi núi, sự phân hoá khí hậu theo độ cao tạo điều
+              kiện phát triển các loại hình du lịch như nghỉ dưỡng, tham quan…
+              Các vùng núi cao có khí hậu mát mẻ quanh năm, không khí trong lành
+              là cơ sở để tạo nên các điểm du lịch, như: Sa Pa (Lào Cai), Tam
+              Đảo (Vĩnh Phúc), Bà Nà (Đà Nẵng), Đà Lạt (Lâm Đồng),… <br />
+              + Sự phân hoá của khí hậu giữa miền Bắc và miền Nam ảnh hưởng đến
+              mùa vụ du lịch của hai miền. Các hoạt động du lịch biển ở miền Bắc
+              hầu như chỉ diễn ra vào mùa hạ còn ở miền Nam có thể diễn ra quanh
+              năm. <br />
+              - Các hiện tượng thời tiết như mưa lớn, bão,... là trở ngại đối với
+              hoạt động du lịch ngoài trời.
+            </p>
+          </article>
+          <article class="quality-card">
+            <div class="quality-icon-container">
+              <i class="fas fa-hands-helping quality-icon"></i>
+            </div>
+            <h3 class="quality-title">
+              Tầm quan trọng của việc sử dụng tổng hợp tài nguyên nước ở một lưu
+              vực sông
+            </h3>
+            <p class="quality-description">
+              Việc sử dụng tổng hợp tài nguyên nước trong một lưu vực sông là kết
+              hợp khai thác nước cho nhiều mục đích (thủy điện, tưới tiêu, giao
+              thông, nuôi trồng thủy sản, phòng chống lũ) và gắn với bảo vệ môi
+              trường. Chẳng hạn lưu vực sông Đà – sông Hồng: hồ Hòa Bình, Sơn La
+              được xây dựng vừa sản xuất thủy điện cung cấp điện cho lưới quốc
+              gia, vừa điều tiết lũ mùa mưa, cấp nước tưới cho đồng bằng sông
+              Hồng và tạo nguồn nước nuôi cá lồng, phát triển du lịch. Nếu chỉ
+              khai thác đơn lẻ một công dụng sẽ không hiệu quả và dễ gây tranh
+              chấp giữa các ngành. ở lưu vực sông Mekong, hệ thống đê bao và
+              kênh mương ở Đồng bằng sông Cừu Long được thiết kế để vừa tiêu
+              úng, rửa mặn, trữ nước ngọt cho mùa khô, vừa phục vụ giao thông
+              thủy và khai thác thủy sản. Những ví dụ này cho thấy sử dụng tổng
+              hợp giúp khai thác hiệu quả nguồn nước, giảm thiệt hại do thiên tai
+              và bảo vệ môi trường.
+            </p>
+          </article>
+        </div>
+        Nguồn thông tin:
+        <a
+          href="https://olm.vn/cau-hoi/chung-minh-tam-quan-trong-cua-viec-su-dung-tong-hop-tai-nguyen-song.9481870788592"
+          target="_blank"
+          >olm.vn</a
+        >,
+        <a
+          href="https://vietjack.com/dia-li-8-kn/luyen-tap-trang-129-dia-li-lop-8.jsp"
+          target="_blank"
+          >vietjack.com</a
+        >,
+        <a
+          href="https://vietjack.com/dia-li-8-kn/cau-hoi-trang-127-dia-li-lop-8.jsp"
+          target="_blank"
+          >vietjack.com</a
+        >
+      </div>
+    </section>
+    <section id="BIENDAO" class="about-section">
+      <hr class="w3-content" />
+      <div class="section-container">
+        <header class="section-header">
+          <h2 class="section-title"><strong>VÙNG BIỂN ĐẢO</strong></h2>
+          <div class="section-divider"></div>
+        </header>
+        <div class="w3-content">
+          <div class="about-details">
+            <div class="about-text">
+              <p>
+                <strong
+                  ><span style="color: red;"><h3>1. Đặc điểm tự nhiên vùng biển đảo</h3></span></strong
+                >
+              </p>
+              <p>
+                <strong><span style="color: red;">a) Địa hình</span></strong>
+              </p>
+              <p>
+                <strong>- <em>Địa hình ven biển</em></strong> rất đa dạng, bao
+                gồm: các dạng bờ biển bồi tụ, bờ biển mài mòn, vịnh cửa sông, bãi
+                cát phẳng, đầm, phá, đảo ven bờ,...
+              </p>
+              <p>
+                - <strong><em>Địa hình thềm lục địa</em></strong> có sự tiếp nối
+                với địa hình trên đất liền. Vùng thềm lục địa rộng, bằng phẳng
+                ở phía bắc và phía nam, hẹp và sâu ở miền Trung.
+              </p>
+              <p>
+                - <strong><em>Đáy biển</em></strong> có nhiều khối núi ngầm.
+              </p>
+              <p>
+                <strong><em>- Địa hình</em></strong>
+                <strong><em>đảo và quần đảo</em></strong
+                >:
+              </p>
+              <p>
+                + Việt Nam có hàng nghìn đảo. Ba đảo lớn nhất nước ta là: đảo
+                Phú Quốc (Kiên Giang), Cát Bà (Hải Phòng) và Cái Bầu (Quảng
+                Ninh), còn lại chủ yếu là đảo nhỏ. Hệ thống đảo ven bờ tập trung
+                chủ yếu ở vùng biển Quảng Ninh, Hải Phòng, Khánh Hòa.
+              </p>
+              <p>
+                + Việt Nam có hai quần đảo xa bờ là: Hoàng Sa (thuộc thành phố Đà
+                Nẵng) và Trường Sa (thuộc tỉnh Khánh Hòa).
+              </p>
+              <p>
+                + Các đảo và quần đảo đóng vai trò quan trọng về kinh tế - chính
+                trị và an ninh quốc phòng.
+              </p>
+              <p>
+                <strong><span style="color: red;">b) Khí hậu</span></strong>
+              </p>
+              <p>
+                <strong>* Đặc điểm chung:</strong> Khí hậu vùng biển nước ta có
+                tính chất nhiệt đới ẩm gió mùa.
+              </p>
+              <p><strong>* Cụ thể:</strong></p>
+              <p>
+                <strong><em>- Nhiệt độ</em></strong> không khí trung bình năm khá
+                cao, khoảng 26°C và có xu hướng tăng dần từ vùng biển phía bắc
+                xuống vùng biển phía nam.
+              </p>
+              <p>
+                <strong><em>- Lượng mưa</em></strong
+                >: trung bình trên biển từ 1100 đến 1300 mm/năm, thấp hơn lượng
+                mưa trung bình trên đất liền.
+              </p>
+              <p><strong><em>- Gió trên Biển:</em></strong></p>
+              <p>
+                + Từ tháng 10 đến tháng 4 năm sau: gió thổi theo hướng đông bắc
+                chiếm ưu thế; các tháng còn lại: ưu thế thuộc về gió thổi theo
+                hướng tây nam (riêng ở vịnh Bắc Bộ chủ yếu là hướng đông nam).
+              </p>
+              <p>
+                + Gió mạnh hơn trên đất liền. Tốc độ trung bình đạt 5 - 6 m/s
+                và cực đại tới 50 m/s.
+              </p>
+              <p>
+                + Gió trên Biển Đông có vai trò quan trọng trong việc hình
+                thành dòng biển theo mùa và sóng trên biển.
+              </p>
+              <p><strong><em>- Bão trên Biển Đông:</em></strong></p>
+              <p>
+                + Thường được hình thành ở vùng biển phía tây Thái Bình Dương
+                hoặc ngay trên Biển Đông.
+              </p>
+              <p>
+                + Trung bình mỗi năm có 9 - 10 cơn bão xuất hiện ở Biển Đông,
+                trong đó có 3 - 4 cơn bão trực tiếp đổ bộ vào đất liền Việt Nam.
+              </p>
+              <p>
+                <strong><span style="color: red;">c) Đặc điểm hải văn</span></strong>
+              </p>
+              <p>
+                <strong><em>- Dòng biển:</em></strong> Hoạt động của gió mùa đã
+                hình thành các dòng biển bao gồm dòng biển lạnh theo gió mùa
+                đông và dòng biển nóng theo gió mùa hạ.
+              </p>
+              <p class="w3-center">
+                <img
+                  src="https://vietjack.com/dia-li-8-ct/images/ly-thuyet-bai-15-dac-diem-tu-nhien-moi-truong-193112.PNG"
+                  class="w3-center w3-container"
+                  alt=""
+                />
+              </p>
+              <p>
+                <strong
+                  ><em>- Hướng chảy và cường độ của dòng biển ven bờ:</em></strong
+                >
+                thay đổi theo mùa:
+              </p>
+              <p>
+                + Về hướng chảy: vào mùa đông, dòng biển có hướng đông bắc - tây
+                nam, còn vào mùa hạ, dòng biển chảy theo hướng ngược lại là tây
+                nam đông bắc.
+              </p>
+              <p>
+                + Về cường độ: dòng biển mùa đông chảy mạnh hơn dòng biển mùa hè.
+              </p>
+              <p>
+                <strong><em>- Sóng biển:</em></strong> gió mùa cũng là nguyên
+                nhân chủ yếu tạo nên sóng trên Biển Đông, trong đó sóng vào mùa
+                đông thường mạnh hơn mùa hạ.
+              </p>
+              <p>
+                <em>- <strong>Nhiệt độ nước biển</strong></em> trung bình trên
+                23°C, có xu hướng tăng dần từ Bắc vào Nam và từ ven bờ ra ngoài
+                khơi.
+              </p>
+              <p>
+                <em>- <strong>Độ muối</strong></em> bình quân của Biển Đông là
+                30 - 33%%; thay đổi theo khu vực, theo mùa và theo độ sâu.
+              </p>
+              <p>
+                <strong><em>- Chế độ thủy triều:</em></strong> Vùng biển ven bờ
+                nước ta có nhiều chế độ thuỷ triều khác nhau:
+              </p>
+              <p>
+                + Ở khu vực phía bắc, chế độ nhật triều được coi là điển hình
+                nhất;
+              </p>
+              <p>
+                + Ở khu vực phía nam, chế độ bán nhật triều xen kẽ với chế độ
+                nhật triều.
+              </p>
+              <p>
+                <strong
+                  ><span style="color: red;"><h3>2. Môi trường biển đảo Việt Nam</h3></span></strong
+                >
+              </p>
+              <p>
+                <strong
+                  ><span style="color: red;">a) Đặc điểm môi trường biển đảo Việt Nam</span></strong
+                >
+              </p>
+              <p>
+                - Môi trường biển là một bộ phận quan trọng trong môi trường sống
+                của chúng ta. Môi trường biển ở nước ta bao gồm: các yếu tố tự
+                nhiên và các yếu tố vật chất nhân tạo.
+              </p>
+              <p><strong><em>- Môi trường nước biển:</em></strong></p>
+              <p>
+                + Chất lượng nước biển ven bờ còn khá tốt với hầu hết các chỉ
+                số đặc trưng đều nằm trong giới hạn cho phép.
+              </p>
+              <p>
+                + Đối với môi trường nước xa bờ, chất lượng nước biển tương đối
+                ổn định và ít biến động qua các năm.
+              </p>
+              <p>
+                <strong><em>- Môi trường bờ biển, bãi biển:</em></strong>
+              </p>
+              <p>
+                + Vùng bờ biển nước ta có nhiều dạng địa hình tiêu biểu như: các
+                vịnh cửa sông, các tam giác châu có bãi triều rộng, các bãi cát
+                phẳng, cồn cát, đầm phá,... tạo nên những cảnh quan đẹp và phân
+                hoá đa dạng.
+              </p>
+              <p>
+                + Các hệ sinh thái vùng bờ biển cũng rất phong phú, nhất là
+                rừng ngập mặn và hệ sinh thái vùng triều có tính đa dạng sinh
+                học cao.
+              </p>
+              <p>
+                <strong><em>- Môi trường các đảo, cụm đảo:</em></strong>
+              </p>
+              <p>
+                + Môi trường trên các đảo chưa bị tác động mạnh, nhiều đảo còn
+                bảo tồn những khu rừng nguyên sinh.
+              </p>
+              <p>
+                + Chất lượng môi trường nước xung quanh đảo khá tốt, phần lớn
+                các chỉ số môi trường nằm trong giới hạn cho phép.
+              </p>
+              <p>
+                <em
+                  >-
+                  <strong>Môi trường biển đang có xu hướng suy giảm về chất lượng:</strong></em
+                >
+              </p>
+              <p>
+                <em>+ Nguyên nhân:</em> sự gia tăng các nguồn thải từ đất liền.
+              </p>
+              <p>
+                <em>+ Biểu hiện:</em> nhiều vùng cửa sông ven biển đã bị ô
+                nhiễm; vẫn còn tình trạng xả thải ra biển chưa qua xử lí; các
+                hệ sinh thái biển đang bị khai thác quá mức, thiếu tính bền
+                vững dẫn đến tình trạng suy giảm đa dạng sinh học,...
+              </p>
+              <p>
+                =&gt; Bảo vệ và cải thiện môi trường biển chính là điều kiện cấp
+                thiết đảm bảo cho sự phát triển kinh tế biển của nước ta.
+              </p>
+              <p class="w3-center">
+                <img
+                  class="w3-center w3-container"
+                  src="https://vietjack.com/dia-li-8-ct/images/ly-thuyet-bai-15-dac-diem-tu-nhien-moi-truong-193113.PNG"
+                  alt=""
+                />
+              </p>
+              <p style="text-align: center;">
+                <em>Rác thải ở bãi biển Hồ Tràm (Bà Rịa – Vũng Tàu)</em>
+              </p>
+              <p>
+                <strong
+                  ><span style="color: red;">b) Vấn đề bảo vệ môi trường biển đảo Việt Nam</span></strong
+                >
+              </p>
+              <p>- Các biện pháp bảo vệ môi trường biển đảo nước ta:</p>
+              <p>
+                + Tham gia vào việc tuyên truyền nâng cao nhận thức của cộng
+                đồng địa phương về bảo vệ môi trường biển, đảo.
+              </p>
+              <p>
+                + Thường xuyên và tích cực tham gia các hoạt động làm sạch bờ
+                biển, làm đẹp cảnh quan, môi trường biển đảo…
+              </p>
+              <p>
+                + Tích cực tham gia các hoạt động khắc phục và làm giảm nhẹ các
+                thiệt hại do thiên tai gây ra tại địa phương.
+              </p>
+              <p>
+                + Tổ chức học tập và thực hành các kĩ năng sống thích ứng với
+                những thay đổi của tự nhiên vùng biển đảo…
+              </p>
+              <p class="w3-center">
+                <img
+                  class="w3-center w3-container"
+                  src="https://vietjack.com/dia-li-8-ct/images/ly-thuyet-bai-15-dac-diem-tu-nhien-moi-truong-193114.PNG"
+                  alt=""
+                />
+              </p>
+              <p style="text-align: center;">
+                <em>Tranh cổ động về bảo vệ môi trường biển</em>
+              </p>
+              <p>
+                <strong
+                  ><span style="color: red;"><h3>3. Tài nguyên biển và thềm lục địa</h3></span></strong
+                >
+              </p>
+              <p>
+                <strong><span style="color: red;">a) Tài nguyên sinh vật</span></strong>
+              </p>
+              <p>- Tài nguyên sinh vật vùng biển nước ta rất phong phú và đa dạng.</p>
+              <p>
+                + Về thực vật, nước ta có diện tích rừng ngập mặn đứng thứ hai
+                thế giới; đã phát hiện trên 600 loài rong biển, khoảng 400 loài
+                tảo biển cùng nhiều loài cỏ biển có giá trị.
+              </p>
+              <p>
+                + Về động vật, biển nước ta có hơn 2000 loài cá, trong đó nhiều
+                loài có giá trị kinh tế như: cá nục, cá trích, cá thu, cá
+                chuồn,... Ngoài ra, vùng biển Việt Nam còn có hàng nghìn loài
+                giáp xác (tôm, cua,..) và các loài nhuyễn thể (mực, ốc, trai,
+                sò,...), hàng trăm loài chim biển (yến, hải âu,..) cùng nhiều
+                loài có giá trị khác.
+              </p>
+              <p>
+                <strong><span style="color: red;">b) Tài nguyên sinh vật</span></strong>
+              </p>
+              <p><strong>- Dầu mỏ và khí tự nhiên:</strong></p>
+              <p>
+                + Vùng biển nước ta có nguồn tài nguyên dầu khí phong phú với
+                trữ lượng ước tính khoảng vài tỉ tấn dầu và hàng trăm tỉ m<sup>3</sup>
+                khí. Hầu hết các diện tích chứa dầu đều nằm trên thềm lục địa
+                với độ sâu không lớn.
+              </p>
+              <p>
+                + Nước ta đã thăm dò ở vùng thềm lục địa có 8 bể trầm tích
+                gồm: Sông Hồng, Phú Khánh, Cửu Long, Nam Côn Sơn, Ma Lay - Thổ
+                Chu, Tư Chính - Vũng Mây, Hoàng Sa và nhóm bể Trường Sa, với diện
+                tích gần 1 triệu km<sup>2</sup>.
+              </p>
+              <p class="w3-center">
+                <img
+                  class="w3-center w3-container"
+                  src="https://vietjack.com/dia-li-8-ct/images/ly-thuyet-bai-15-dac-diem-tu-nhien-moi-truong-193115.PNG"
+                  alt=""
+                />
+              </p>
+              <p style="text-align: center;">
+                <em>Khai thác dầu tạo mỏ Đại Hùng</em>
+              </p>
+              <p><strong>- Muối:</strong></p>
+              <p>
+                + Điều kiện phát triển: đường bờ biển dài, biển có độ muối trung
+                bình cao, nền nhiệt độ cao và nhiều nắng.
+              </p>
+              <p>
+                + Những cánh đồng muối lớn phân bố chủ yếu ở một số tỉnh ven
+                biển Nam Trung Bộ và Nam Bộ, như: Quảng Ngãi, Khánh Hoà, Ninh
+                Thuận,...
+              </p>
+              <p><strong>- Một số tài nguyên khoáng sản khác:</strong></p>
+              <p>
+                + Quặng titan có nhiều trong sa khoáng ven biển miền Trung với
+                trữ lượng dự báo khoảng 650 triệu tấn, tập trung nhiều ở khu
+                vực ven biển Ninh Thuận, Bình Thuận và Bà Rịa - Vũng Tàu.
+              </p>
+              <p>
+                <strong>+ </strong>Vùng ven biển nước ta còn có tiềm năng lớn
+                về cát thuỷ tinh. Cát thuỷ tinh phân bố ở nhiều nơi như vùng
+                Duyên hải Nam Trung Bộ, ven biển khu vực Quảng Bình - Quảng Trị
+                - Thừa Thiên Huế,
+              </p>
+              <p>
+                + Ngoài ra, còn có phốt pho ở các quần đảo Hoàng Sa, Trường Sa;
+                băng cháy, đồng, chì, kẽm,... phân bố ở đáy biển hoặc nằm trong
+                lòng đất dưới đáy biển.
+              </p>
+              <p>
+                <strong><span style="color: red;">c) Tài nguyên du lịch</span></strong>
+              </p>
+              <p>
+                - Dọc bờ biển nước ta có khoảng hơn 120 bãi biển, bãi cát phẳng,
+                độ dốc trung bình phù hợp cho phát triển du lịch. Có nhiều bãi
+                tắm đẹp, đặc biệt là dải bờ biển từ Đại Lãnh (Khánh Hòa) cho tới
+                Phan Thiết (Bình Thuận).
+              </p>
+              <p>
+                - Các đảo và quần đảo của nước ta cũng có giá trị du lịch rất
+                lớn, như: vịnh Hạ Long, đảo Phú Quốc,…
+              </p>
+              <p class="w3-center">
+                <img
+                  class="w3-center w3-container"
+                  src="https://vietjack.com/dia-li-8-ct/images/ly-thuyet-bai-15-dac-diem-tu-nhien-moi-truong-193116.PNG"
+                  alt=""
+                />
+              </p>
+              <p style="text-align: center;">
+                <em>Quang cảnh một phần vịnh Hạ Long (Quảng Ninh)</em>
+              </p>
+              <p>
+                <strong
+                  ><span style="color: red;"
+                    >d) Các tài nguyên khác ở vùng biển và thềm lục địa Việt Nam</span
+                  ></strong
+                >
+              </p>
+              <p>
+                - Nước ta nằm ở khu vực nhiệt đới gió mùa, gió thổi thường xuyên
+                với tốc độ trung bình. Chính vì vậy, tiềm năng triển vọng năng
+                lượng điện gió của nước ta là rất lớn.
+              </p>
+              <p>
+                - Bên cạnh nguồn năng lượng, gió nước ta còn có nguồn năng lượng
+                thủy triều ổn định. Hai khu vực có tiềm năng năng lượng thủy
+                triều có thể xây dựng được các nhà máy điện để phục vụ cho hoạt
+                động sản xuất là:
+              </p>
+              <p>+ Khu vực Móng Cái (Quảng Ninh) đến Thanh Hóa.</p>
+              <p>+ Khu vực từ Mũi Ba Kiệm (Bình Thuận) đến Cà Mau.</p>
+              <p>
+                - Ngoài ra, dọc theo bờ biển nước ta có nhiều khu vực nước sâu,
+                thuận lợi để xây dựng cảng biển, nhất là các cảng nước sâu như:
+                Cái Lân (Quảng Ninh), Chân Mây (Thừa Thiên Huế), Dung Quất
+                (Quảng Ngãi),...
+              </p>
+              <p class="w3-center">
+                <img
+                  class="w3-center w3-container"
+                  src="https://vietjack.com/dia-li-8-ct/images/ly-thuyet-bai-15-dac-diem-tu-nhien-moi-truong-193117.PNG"
+                  alt=""
+                />
+              </p>
+              <p style="text-align: center;">
+                <em>Cảng Chân Mây (Thừa Thiên Huế)</em>
+              </p>
+              <p class="w3-source">
+                Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://vietjack.com/dia-li-8-ct/ly-thuyet-bai-15-dac-diem-tu-nhien-moi-truong.jsp"
+                  >vietjack.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="HINHANH" class="gallery-section">
+      <div class="section-container">
+        <header class="section-header" data-aos="fade-down">
+          <h2 class="section-title"><STROng>HÌNH ẢNH QUÂN ĐỘI VIỆT NAM</STROng></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Những khoảnh khắc đẹp về Quân đội Nhân dân Việt Nam
+          </p>
+        </header>
+        <div class="gallery-grid" id="gallery-quandoi" data-aos="fade-up">
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://cdn.thuvienphapluat.vn/uploads/tintuc/2025/04/21/dieu-binh-2-9.jpg"
+                alt="Lễ duyệt binh"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Lễ duyệt binh Quốc khánh 2/9</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Lễ duyệt binh Quốc khánh 2/9</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/thong-tin-huu-ich/83093/se-co-duyet-binh-hay-dieu-binh-vao-ngay-2-9-2025-ky-niem-80-nam-quoc-khanh-nuoc-cong-hoa-xa-hoi-chu-nghia-viet-nam"
+                target="_blank"
+                >thuvienphapluat.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="./2-17226.webp"
+                alt="Huấn luyện quân sự"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Huấn luyện chiến đấu</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Huấn luyện chiến đấu</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://dantri.com.vn/thoi-su/quan-doi-viet-nam-dien-tap-san-sang-chien-dau-1358416844.htm"
+                >dantri.com.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://cdn-images.vtv.vn/2020/5/14/quan2-15895126693795046099.jpg"
+                alt="Học viên quân sự"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Học viên các trường quân sự</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Học viên các trường quân sự</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://vtv.vn/giao-duc/phuong-thuc-tuyen-sinh-cua-cac-hoc-vien-truong-quan-doi-nam-2020-20200514201907437.htm"
+                target="_blank"
+                >vtv.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://tapchimythuat.vn/wp-content/uploads/2025/04/1-3.jpg"
+                alt="Diễu binh"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Đội hình diễu binh hùng mạnh</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Đội hình diễu binh hùng mạnh</p>
+
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://tapchimythuat.vn/anh-tong-hop-luyen-dieu-binh-chuan-bi-dai-le-30-4/"
+                target="_blank"
+                >tapchimythuat.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://vov2.vov.vn/sites/default/files/styles/large/public/2025-09/540953864_1078752537754973_7699688895870782884_n.jpg"
+                alt="Hải quân Việt Nam"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">
+                  Lực lượng Hải quân nhân dân Việt Nam
+                </p>
+              </figcaption>
+              <p class="only-safari">Lực lượng Hải quân nhân dân Việt Nam</p>
+            </figure>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://vov2.vov.vn/multimedia/anh/anh-hai-quan-viet-nam-pho-dien-suc-manh-voi-le-dieu-binh-tren-bien-54757.vov2"
+                target="_blank"
+                >vov2.vov.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://images2.thanhnien.vn/thumb_w/640/528068263637045248/2024/5/1/base64-1714536754846902141788.jpeg"
+                alt="Không quân"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">
+                  Lực lượng Không quân nhân dân Việt Nam
+                </p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Lực lượng Không quân nhân dân Việt Nam</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://thanhnien.vn/luc-luong-khong-quan-thuoc-bo-cong-an-duoc-trang-bi-tau-bay-nhu-the-nao-185240501101002494.htm"
+                target="_blank"
+                >thanhnien.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://img.cand.com.vn/NewFiles/Images/2024/11/16/b1a-1731767145816.jpg"
+                alt="Phòng không"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Lực lượng Phòng không</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Lực lượng Phòng không</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://cand.com.vn/doi-song/linh-phong-khong-khong-quan-hanh-quan-dem-dien-tap-bao-ve-vung-troi-mien-bac-i750557/"
+                target="_blank"
+                >cand.com.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://cand.com.vn/Files/Image/vanthanh/2020/08/16/thumb_660_f45bafba-454e-4d0b-982f-0a81bb7d79d4.jpeg"
+                alt="Biên phòng"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">
+                  Bộ đội Biên phòng canh giữ biên cương
+                </p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Bộ đội Biên phòng canh giữ biên cương</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://cand.com.vn/doi-song/Hinh-anh-nguoi-linh-Bien-phong-noi-tuyen-dau-chong-dich-COVID-19-i577050/"
+                target="_blank"
+                >cand.com.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://file.qdnd.vn/data/images/0/2021/08/17/tuanson/4.jpg?dpi=150&quality=100&w=870"
+                alt="Học tập chính trị trong quân đội"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Học tập chính trị trong quân đội</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Học tập chính trị trong quân đội</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/dot-pha-trong-doi-moi-giao-duc-chinh-tri-668608"
+                target="_blank"
+                >qdnd.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://file3.qdnd.vn/data/images/0/2021/11/24/tuanson/1.jpg?dpi=150&quality=100&w=870"
+                alt="Vũ khí quân sự"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Làm chủ vũ khí, khí tài hiện đại</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Làm chủ vũ khí, khí tài hiện đại</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/lam-chu-khi-tai-hien-dai-bao-dam-thong-tin-lien-lac-thong-suot-678413"
+                target="_blank"
+                >qdnd.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksG-ib2F96UwREOwyIx2B28oL0uJrjD5sxw&s"
+                alt="Đời sống quân ngũ"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Đời sống văn hóa trong quân đội</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Đời sống văn hóa trong quân đội</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://dantri.com.vn/thoi-su/can-canh-cuoc-song-trong-quan-ngu-cua-cac-tan-binh-20220322085348361.htm"
+                target="_blank"
+                >dantri.com.vn</a
+              >
+            </p>
+          </div>
+          <div>
+            <figure class="gallery-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJhvHQBlQ_4KwVOeEShKaLK5TlobFGJFbbhA&s"
+                alt="Cứu hộ cứu nạn"
+                class="gallery-image"
+              />
+              <figcaption class="gallery-overlay">
+                <p class="gallery-caption">Tham gia cứu hộ, cứu nạn</p>
+              </figcaption>
+            </figure>
+            <p class="only-safari">Tham gia cứu hộ, cứu nạn</p>
+            <p class="w3-source">
+              Nguồn hình ảnh:
+              <a
+                href="https://www.mod.gov.vn/vn/noi-dung/sa-qlcddh/sa-qlcddh-cddh/cuc-cuu-ho-cuu-nan-nang-cao-nang-luc-tham-muu-ung-pho-khac-phuc-su-co-thien-tai-va-tim-kiem-cuu-nan"
+                target="_blank"
+                >Bo quoc phong</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">
+              <i class="fa-solid fa-star footer-logo-icon star-sharp"></i>
+            </span>
+            <h2 class="footer-logo-text">
+              VIỆT NAM PHONG PHÚ QUA TỪNG MIỀN ĐẤT.
+            </h2>
+          </div>
+          <div class="footer-info">
+            <address class="footer-personal">
+              <h3 class="footer-title">Thông Tin liên hệ</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Xã Mỏ Cày, Vĩnh Long, Việt
+                Nam
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i
+                ><a href="mailto:baonguyenhoanggia119@gmail.com"
+                  >baonguyenhoanggia119@gmail.com</a
+                >
+              </p>
+              <p>
+                <i class="fas fa-phone"></i>
+                <a href="tel:0866332946" style="text-decoration: none;"
+                  >0866332946</a
+                >
+              </p>
+            </address>
+          </div>
+          <div class="footer-copyright">
+            <p>
+              &copy; 2025 - Việt Nam – nơi lịch sử, thiên nhiên và khát vọng hội
+              tụ
+            </p>
+            <p class="footer-note">
+              Trang web được tạo ra với mục đích học tập và khám phá về Việt Nam
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+        onValue,
+        onDisconnect,
+      } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyCdKoOVSTgYLjsWugQFYdVLWyd7ak427M8",
+        authDomain: "truycap-60b83.firebaseapp.com",
+        databaseURL:
+          "https://truycap-60b83-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "truycap-60b83",
+        storageBucket: "truycap-60b83.firebasestorage.app",
+        messagingSenderId: "645539664003",
+        appId: "1:645539664003:web:5717f4917e7b545a5f0bb6",
+      };
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+      var sid = sessionStorage.getItem("vc_sid");
+      if (!sid) {
+        sid = Math.random().toString(36).slice(2);
+        sessionStorage.setItem("vc_sid", sid);
+      }
+      var meRef = ref(db, "online/" + sid);
+      set(meRef, { t: Date.now() });
+      onDisconnect(meRef).remove();
+
+      onValue(ref(db, "online"), function (snap) {
+        var el = document.getElementById("vc-online");
+        if (el)
+          el.textContent = snap.exists()
+            ? Object.keys(snap.val()).length
+            : 0;
+      });
+      var NS = "vietnam-muon-mau";
+      var today = new Date().toISOString().slice(0, 10);
+      var dayKey = "visits-" + today;
+      var counted = sessionStorage.getItem("vc_counted");
+      var base = "https://countapi.mileshilliard.com/api/v1/";
+
+      Promise.all([
+        fetch(base + (counted ? "get" : "hit") + "/" + NS).then(function (r) {
+          return r.json();
+        }),
+        fetch(base + (counted ? "get" : "hit") + "/" + NS + "-" + today).then(
+          function (r) {
+            return r.json();
+          }
+        ),
+      ])
+        .then(function (res) {
+          if (!counted) sessionStorage.setItem("vc_counted", "1");
+          var elTotal = document.getElementById("vc-total");
+          var elToday = document.getElementById("vc-today");
+          if (elTotal) {
+            elTotal.classList.remove("vc-loading");
+            elTotal.textContent = Number(res[0].value).toLocaleString("vi-VN");
+          }
+          if (elToday) {
+            elToday.classList.remove("vc-loading");
+            elToday.textContent = Number(res[1].value).toLocaleString("vi-VN");
+          }
+        })
+        .catch(function () {
+          ["vc-total", "vc-today"].forEach(function (id) {
+            var e = document.getElementById(id);
+            if (e) {
+              e.classList.remove("vc-loading");
+              e.textContent = "—";
+            }
+          });
+        });
+    </script>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    <script>
+      const backToTop = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTop.style.display = "block";
+        } else {
+          backToTop.style.display = "none";
+        }
+      });
+      function createSmallStar() {
+        const star = document.createElement("div");
+        star.className = "small-star";
+        star.style.left = Math.random() * window.innerWidth + "px";
+        star.style.top = Math.random() * window.innerHeight + "px";
+        document.body.appendChild(star);
+      }
+      for (let i = 0; i < 150; i++) {
+        createSmallStar();
+      }
+      window.onload = function () {
+        setTimeout(function () {
+          document.getElementById("loading").style.display = "none";
+          document.body.style.backgroundColor = "white";
+          document.body.style.color = "black";
+        }, 4000);
+      };
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("[data-aos]").forEach(function (el) {
+          el.removeAttribute("data-aos");
+          el.removeAttribute("data-aos-delay");
+          el.removeAttribute("data-aos-duration");
+        });
+        var rules = [
+          { sel: "section .section-header", aos: "fade-down", delay: 0 },
+          { sel: "section .section-title", aos: "fade-down", delay: 50 },
+          { sel: "section .section-divider", aos: "zoom-in", delay: 120 },
+          { sel: "section .section-subtitle", aos: "fade-up", delay: 150 },
+          { sel: "section h2", aos: "fade-down", delay: 0 },
+          { sel: "section h3", aos: "fade-left", delay: 60 },
+          { sel: ".quality-card", aos: "fade-up", delay: 0, stagger: 100 },
+          { sel: ".career-card", aos: "fade-up", delay: 0, stagger: 120 },
+          { sel: ".gallery-item", aos: "zoom-in", delay: 0, stagger: 50 },
+          { sel: ".mineral-table", aos: "fade-up", delay: 0 },
+          { sel: "#visitor-widget", aos: "zoom-in", delay: 0 },
+          { sel: ".career-image-container", aos: "fade-right", delay: 0 },
+          { sel: ".career-content", aos: "fade-left", delay: 100 },
+          { sel: ".quality-icon-container", aos: "zoom-in", delay: 0, stagger: 80 },
+          { sel: ".quality-title", aos: "fade-up", delay: 50, stagger: 80 },
+          { sel: ".footer-content > div", aos: "fade-up", delay: 0, stagger: 100 },
+        ];
+        rules.forEach(function (rule) {
+          document.querySelectorAll(rule.sel).forEach(function (el, i) {
+            el.setAttribute("data-aos", rule.aos);
+            var d =
+              (rule.delay || 0) +
+              (rule.stagger ? Math.min(i * rule.stagger, 400) : 0);
+            el.setAttribute("data-aos-delay", d);
+            el.setAttribute("data-aos-duration", "680");
+          });
+        });
+        AOS.init({
+          once: true,
+          offset: 80,
+          easing: "ease-out-cubic",
+        });
+        var sections = Array.from(document.querySelectorAll("section[id]"));
+        var navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+        function updateNav() {
+          var scrollY = window.scrollY + 140;
+          var current = sections.length ? sections[0].id : "";
+          sections.forEach(function (sec) {
+            if (scrollY >= sec.offsetTop) current = sec.id;
+          });
+          navLinks.forEach(function (link) {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current)
+              link.classList.add("active");
+          });
+        }
+        window.addEventListener("scroll", updateNav, { passive: true });
+        updateNav();
+        var counters = [
+          { text: "331.212", target: 331212, suffix: " km²" },
+          { text: "4.639", target: 4639, suffix: " km" },
+          { text: "3.260", target: 3260, suffix: " km" },
+          { text: "1.650", target: 1650, suffix: " km" },
+        ];
+        document.querySelectorAll("u").forEach(function (u) {
+          counters.forEach(function (c) {
+            if (u.textContent.trim() === c.text) {
+              u.dataset.target = c.target;
+              u.dataset.suffix = c.suffix;
+              u.dataset.counter = "1";
+            }
+          });
+        });
+        var cObs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting || entry.target.dataset.done) return;
+              entry.target.dataset.done = "1";
+              var target = +entry.target.dataset.target;
+              var suffix = entry.target.dataset.suffix;
+              var step = target / (1600 / 16);
+              var cur = 0;
+              var t = setInterval(function () {
+                cur += step;
+                if (cur >= target) {
+                  cur = target;
+                  clearInterval(t);
+                }
+                entry.target.textContent =
+                  Math.floor(cur).toLocaleString("vi-VN") + suffix;
+              }, 16);
+            });
+          },
+          { threshold: 0.5 }
+        );
+        document.querySelectorAll("[data-counter]").forEach(function (el) {
+          cObs.observe(el);
+        });
+        var mObs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add("mark-visible");
+                mObs.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+        document.querySelectorAll("mark").forEach(function (m) {
+          mObs.observe(m);
+        });
+        var rows = document.querySelectorAll(".mineral-table tbody tr");
+        rows.forEach(function (r, i) {
+          r.style.opacity = "0";
+          r.style.transform = "translateX(-18px)";
+          r.style.transition =
+            "opacity 0.45s ease " +
+            i * 70 +
+            "ms, transform 0.45s ease " +
+            i * 70 +
+            "ms";
+        });
+        var tObs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                rows.forEach(function (r) {
+                  r.style.opacity = "1";
+                  r.style.transform = "none";
+                });
+                tObs.disconnect();
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+        var table = document.querySelector(".mineral-table");
+        if (table) tObs.observe(table);
+      });
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          var el = document.getElementById("typed-title");
+          if (el && typeof Typed !== "undefined") {
+            new Typed("#typed-title", {
+              strings: ["Việt Nam muôn màu – mỗi người một sắc"],
+              typeSpeed: 55,
+              showCursor: true,
+              cursorChar: "|",
+              loop: false,
+            });
+          }
+        }, 4100);
+      });
+      window.addEventListener("load", function () {
+        document.querySelectorAll(".gallery-grid").forEach(function (container) {
+          container.querySelectorAll(".gallery-item").forEach(function (item) {
+            var img = item.querySelector("img");
+            var cap = item.querySelector(".gallery-caption");
+            if (img && !item.hasAttribute("data-src")) {
+              item.setAttribute("data-src", img.src);
+              item.setAttribute(
+                "data-sub-html",
+                cap ? "<p>" + cap.textContent + "</p>" : ""
+              );
+            }
+          });
+          if (typeof lightGallery !== "undefined") {
+            lightGallery(container, {
+              selector: ".gallery-item",
+              plugins: [lgZoom],
+              speed: 400,
+            });
+          }
+        });
+      });
+      const menuLinks = document.querySelectorAll("#menu-list a");
+      const menuToggle = document.getElementById("menu-toggle");
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 768) {
+            menuToggle.checked = false;
+          }
+        });
+      });
+      document.addEventListener("keydown", function (e) {
+        if (
+          e.key === "F12" ||
+          (e.ctrlKey && e.key === "u") ||
+          (e.ctrlKey && e.shiftKey && e.key === "I") ||
+          (e.ctrlKey && e.shiftKey && e.key === "C") ||
+          (e.ctrlKey && e.shiftKey && e.key === "J")
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    <div id="loading">
+      <div id="star-box"></div>
+    </div>
+  </body>
+</html>
