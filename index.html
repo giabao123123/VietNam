@@ -329,6 +329,17 @@
         animation: arrowUp 1.4s infinite;
         animation-delay: 0.2s;
       }
+      @keyframes arrowUp {
+        0%,
+        100% {
+          opacity: 0.5;
+          transform: rotate(45deg) translateY(2px);
+        }
+        50% {
+          opacity: 1;
+          transform: rotate(45deg) translateY(-2px);
+        }
+      }
       @media (max-width: 600px) {
         #backToTop a {
           width: 42px;
