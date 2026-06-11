@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://giabao123123.github.io/VietNam/" />
     <link rel="canonical" href="https://giabao123123.github.io/VietNam/" />
     <title>VietNamExplore</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -369,11 +369,9 @@
         margin-bottom: 5px;
       }
       .menu-icon {
-        position: fixed;
-        top: 14px;
-        right: 14px;
+        position: static;
         font-size: 26px;
-        padding: 12px 16px;
+        padding: 10px 14px;
         border-radius: 12px;
         background: linear-gradient(145deg, #2e8b57, #1f6f4a) !important;
         color: #ffffff;
@@ -384,6 +382,7 @@
         transition:
           transform 0.25s ease,
           box-shadow 0.25s ease;
+        flex-shrink: 0;
       }
       .menu {
         list-style: none;
