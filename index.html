@@ -433,27 +433,33 @@
         color: #ffcd00;
         transform: scale(1.06);
       }
-      @media (max-width: 768px) {
+        @media (max-width: 768px) {
         .menu-icon {
           display: inline-block;
         }
         .menu {
+          position: absolute;
+          top: 100%;
+          right: 0;
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.4s ease;
           margin-top: 0;
           border: 1px solid #333;
-          width: 200px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          width: 220px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
           padding-left: 0;
+          background: linear-gradient(180deg, #0a3d2e, #1a5c3d);
+          z-index: 9999;
+          list-style: none;
         }
-        #menu-toggle:checked + .menu-icon + .menu {
+        #menu-toggle:checked ~ .menu {
           max-height: 1000px;
           margin-top: 5px;
         }
         .menu li {
           display: block;
-          border-bottom: 1px solid #ddd;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
         }
       }
       .mobile-menu {
@@ -705,7 +711,7 @@
           ></a>
           <h1 class="logo-text">VIỆT NAM MUÔN MÀU</h1>
         </div>
-        <div class="w3-hide-large" style="display:flex;align-items:center;gap:10px;flex:1;justify-content:flex-end;">
+        <div class="w3-hide-large" style="display:flex;align-items:center;gap:10px;flex:1;justify-content:flex-end;position:relative;">
           <input type="checkbox" id="menu-toggle" hidden />
           <label for="menu-toggle" class="menu-icon">☰</label>
           <a href="https://giabao123123.github.io/hoctap/" style="display:flex;align-items:center;gap:8px;text-decoration:none;">
