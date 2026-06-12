@@ -279,11 +279,26 @@ a:active {
 }
 .star-sharp {
   display: inline-block;
-  color: gold;
-  font-size: 1.8rem;
-  text-shadow:
-    0 0 8px rgba(255, 215, 0, 0.8),
-    0 0 16px rgba(255, 165, 0, 0.5);
+  width: 36px;
+  height: 36px;
+  background: radial-gradient(gold);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  box-shadow:
+    0 0 12px gold,
+    0 0 25px gold,
+    0 0 40px orange;
+  vertical-align: middle;
 }
 @keyframes grow {
   0% {
