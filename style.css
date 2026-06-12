@@ -1245,8 +1245,8 @@ section {
   :root {
     --section-spacing: 3rem;
   }
-  /* Hide the star from logo-section on mobile — it now lives next to ☰ */
-  .logo-section .logo-icon {
+  /* Hide entire logo-section on mobile — logo now lives next to ☰ */
+  .logo-section {
     display: none;
   }
   .header-container {
